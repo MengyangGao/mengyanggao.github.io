@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import { getSiteContent } from '../../lib/site-content';
+import { resolveSite } from '../../lib/site-url';
+
+const { contact, pages, siteName, seo } = getSiteContent();
+const pageText = pages.contact;
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/contact/wechat/', site).toString();
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: pageText.wechatTitle.en,
+  url: pageUrl,
+  inLanguage: ['en', 'zh-CN', 'zh-HK']
+};
+---
+
+<BaseLayout title={`${pageText.wechatTitle.en} | ${siteName}`} description={seo.wechatDescription} jsonLd={pageJsonLd}>
+  <Header active="home" />
+
+  <main id="main-content" class="page-shell">
+    {contact.wechatQr && (
+      <section class="section panel wechat-panel">
+        <img class="wechat-qr" src={contact.wechatQr} alt={pageText.wechatAlt.en} loading="lazy" />
+      </section>
+    )}
+  </main>
+</BaseLayout>

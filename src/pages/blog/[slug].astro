@@ -1,0 +1,105 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import GiscusComments from '../../components/GiscusComments.astro';
+import { getSiteContent, resolveContentAssetPath } from '../../lib/site-content';
+import { estimateReadingMinutes } from '../../lib/reading-time';
+import { resolveSite } from '../../lib/site-url';
+import { resolveTitle } from '../../lib/localized-text';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id.replace(/\.md$/, '') }, props: { post } }));
+}
+
+type Props = { post: CollectionEntry<'blog'> };
+const { post } = Astro.props;
+const siteContent = getSiteContent();
+const { pages, siteName, profile } = siteContent;
+const pageText = pages.blogPost;
+const { Content } = await render(post);
+const readMins = estimateReadingMinutes(post.body || '');
+const sourceUrl = String(post.data.url || '').trim();
+const postTitle = resolveTitle(post.data, 'zhHans');
+const postDescription = String(post.data.summary || '').trim() || postTitle;
+const hasZhText = Boolean(String(post.data.title_zh || post.data.summary || '').trim());
+const hasEnText = Boolean(String(post.data.title_en || post.data.summary || '').trim());
+const inLanguage = hasZhText && hasEnText ? ['zh-CN', 'zh-HK', 'en'] : hasZhText ? ['zh-CN', 'zh-HK'] : 'en';
+const site = resolveSite(Astro.site);
+const slug = post.id.replace(/\.md$/, '');
+const pageUrl = new URL(`/blog/${slug}/`, site).toString();
+const coverImage = resolveContentAssetPath(post.data.cover_image) || resolveContentAssetPath(profile.avatar) || profile.avatar || '';
+const blogPostingJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: postTitle,
+  description: postDescription,
+  datePublished: post.data.publish_date.toISOString(),
+  dateModified: (post.data.modify_date || post.data.publish_date).toISOString(),
+  inLanguage,
+  url: pageUrl,
+  mainEntityOfPage: pageUrl,
+  author: {
+    '@type': 'Person',
+    name: profile.name.en,
+  },
+  publisher: {
+    '@type': 'Person',
+    name: profile.name.en,
+  },
+  keywords: post.data.tags,
+  image: coverImage || undefined,
+};
+---
+
+<BaseLayout
+  title={`${postTitle} | ${siteName}`}
+  description={postDescription}
+  jsonLd={blogPostingJsonLd}
+  image={post.data.cover_image}
+  pageType="article"
+  publishedTime={post.data.publish_date.toISOString()}
+  modifiedTime={(post.data.modify_date || post.data.publish_date).toISOString()}
+  tags={post.data.tags}
+  author={profile.name.en}
+>
+  <Header active="blog" />
+
+  <main id="main-content" class="page-shell">
+    <article class="article-panel">
+      <header class="article-header">
+        <h1 class="article-title">{postTitle}</h1>
+        <p class="article-date">
+          <span class="lang-en">{pageText.publishedAtLabel.en}</span>
+          <span class="lang-zh-hans">{pageText.publishedAtLabel.zhHans}</span>
+          <span class="lang-zh-hant">{pageText.publishedAtLabel.zhHant}</span> {post.data.publish_date.toISOString().slice(0, 10)}
+          {' · '}
+          <span class="lang-en">{pageText.readTime.en.replace('{count}', String(readMins))}</span>
+          <span class="lang-zh-hans">{pageText.readTime.zhHans.replace('{count}', String(readMins))}</span>
+          <span class="lang-zh-hant">{pageText.readTime.zhHant.replace('{count}', String(readMins))}</span>
+        </p>
+        {post.data.modify_date && post.data.modify_date.getTime() !== post.data.publish_date.getTime() && (
+          <p class="article-date">
+            <span class="lang-en">{pageText.modifiedAtLabel.en}</span>
+            <span class="lang-zh-hans">{pageText.modifiedAtLabel.zhHans}</span>
+            <span class="lang-zh-hant">{pageText.modifiedAtLabel.zhHant}</span> {post.data.modify_date.toISOString().slice(0, 10)}
+          </p>
+        )}
+        {sourceUrl && (
+          <p class="article-date">
+            <span class="lang-en">{pageText.alsoAtLabel.en}</span>
+            <span class="lang-zh-hans">{pageText.alsoAtLabel.zhHans}</span>
+            <span class="lang-zh-hant">{pageText.alsoAtLabel.zhHant}</span>{' '}
+            <a href={sourceUrl} target="_blank" rel="noopener noreferrer">{sourceUrl}</a>
+          </p>
+        )}
+      </header>
+      <section class="article-prose">
+        <Content />
+      </section>
+    </article>
+    <GiscusComments />
+  </main>
+</BaseLayout>

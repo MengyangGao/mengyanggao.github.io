@@ -1,0 +1,25 @@
+---
+import type { LocalizedText } from '../lib/site-content';
+import LocalizedTextView from './LocalizedText.astro';
+
+interface Props {
+  title: LocalizedText;
+  description?: LocalizedText;
+}
+
+const { title, description } = Astro.props;
+const showDescription = Boolean(
+  description && (description.en.trim() || description.zhHans.trim() || description.zhHant.trim())
+);
+---
+
+<section class="hero">
+  <h1><LocalizedTextView text={title} /></h1>
+  {showDescription && description && (
+    <>
+      <p class="lang-en">{description.en}</p>
+      <p class="lang-zh-hans">{description.zhHans}</p>
+      <p class="lang-zh-hant">{description.zhHant}</p>
+    </>
+  )}
+</section>

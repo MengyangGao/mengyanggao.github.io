@@ -1,0 +1,610 @@
+{
+  "generated_at": "2026-08-03T04:27:40.762Z",
+  "github": {
+    "repos": {
+      "MengyangGao/visual_servo_tracking": {
+        "url": "https://github.com/MengyangGao/visual_servo_tracking",
+        "full_name": "MengyangGao/visual_servo_tracking",
+        "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
+        "stars": 3,
+        "forks": 0,
+        "created_at": "2026-04-07T09:58:58Z",
+        "updated_at": "2026-07-31T17:03:33Z",
+        "pushed_at": "2026-07-31T16:31:04Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "Python",
+          "MATLAB"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 594592,
+            "ratio": 80.4
+          },
+          {
+            "name": "MATLAB",
+            "bytes": 145364,
+            "ratio": 19.6
+          }
+        ]
+      },
+      "MengyangGao/LLM-Robot": {
+        "url": "https://github.com/MengyangGao/LLM-Robot",
+        "full_name": "MengyangGao/LLM-Robot",
+        "description": "Use LLM to understand user input and control the robot under ROS",
+        "stars": 48,
+        "forks": 10,
+        "created_at": "2024-05-05T12:32:19Z",
+        "updated_at": "2026-06-27T16:35:27Z",
+        "pushed_at": "2024-05-31T06:28:14Z",
+        "homepage": null,
+        "topics": [],
+        "top_languages": [
+          "Python"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 20812,
+            "ratio": 100
+          }
+        ]
+      },
+      "MengyangGao/hand_exoskeleton": {
+        "url": "https://github.com/MengyangGao/hand_exoskeleton",
+        "full_name": "MengyangGao/hand_exoskeleton",
+        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+        "stars": 98,
+        "forks": 10,
+        "created_at": "2024-05-26T09:19:11Z",
+        "updated_at": "2026-07-25T01:39:43Z",
+        "pushed_at": "2026-06-03T15:53:12Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "C",
+          "C++"
+        ],
+        "language_stats": [
+          {
+            "name": "C",
+            "bytes": 38319,
+            "ratio": 81.8
+          },
+          {
+            "name": "C++",
+            "bytes": 8533,
+            "ratio": 18.2
+          }
+        ]
+      },
+      "MengyangGao/Awesome-Robotics-Embodied-AI": {
+        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
+        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
+        "description": "My notes on Robotics and Embodied AI.",
+        "stars": 17,
+        "forks": 1,
+        "created_at": "2024-11-18T15:54:46Z",
+        "updated_at": "2026-07-27T08:06:24Z",
+        "pushed_at": "2026-04-03T00:11:15Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/gzic.online": {
+        "url": "https://github.com/MengyangGao/gzic.online",
+        "full_name": "MengyangGao/gzic.online",
+        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+        "stars": 62,
+        "forks": 10,
+        "created_at": "2023-03-31T12:45:11Z",
+        "updated_at": "2026-07-16T13:55:01Z",
+        "pushed_at": "2024-09-08T09:21:37Z",
+        "homepage": "https://scut.wiki",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 34,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-06-03T20:03:53Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/RAG-system": {
+        "url": "https://github.com/MengyangGao/RAG-system",
+        "full_name": "MengyangGao/RAG-system",
+        "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+        "stars": 2,
+        "forks": 1,
+        "created_at": "2024-06-26T16:12:54Z",
+        "updated_at": "2024-07-08T09:02:09Z",
+        "pushed_at": "2024-07-07T15:52:04Z",
+        "homepage": null,
+        "topics": [],
+        "top_languages": [
+          "Python"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 11932,
+            "ratio": 100
+          }
+        ]
+      },
+      "MengyangGao/infoMatrix": {
+        "url": "https://github.com/MengyangGao/infoMatrix",
+        "full_name": "MengyangGao/infoMatrix",
+        "description": "InfoMatrix: the next generation information collector, RSS, read-it-later and memos ALL IN ONE.",
+        "stars": 0,
+        "forks": 0,
+        "created_at": "2026-03-21T12:35:34Z",
+        "updated_at": "2026-06-22T08:54:11Z",
+        "pushed_at": "2026-06-22T08:54:07Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "Rust",
+          "Swift",
+          "Dart",
+          "Shell"
+        ],
+        "language_stats": [
+          {
+            "name": "Rust",
+            "bytes": 571229,
+            "ratio": 51
+          },
+          {
+            "name": "Swift",
+            "bytes": 278565,
+            "ratio": 24.8
+          },
+          {
+            "name": "Dart",
+            "bytes": 180250,
+            "ratio": 16.1
+          },
+          {
+            "name": "Shell",
+            "bytes": 32088,
+            "ratio": 2.9
+          }
+        ]
+      },
+      "MengyangGao/mengyanggao.github.io": {
+        "url": "https://github.com/MengyangGao/mengyanggao.github.io",
+        "full_name": "MengyangGao/mengyanggao.github.io",
+        "description": "Mengyang Gao's personal website, built with Astro + TypeScript.",
+        "stars": 3,
+        "forks": 0,
+        "created_at": "2026-01-03T09:56:03Z",
+        "updated_at": "2026-07-27T04:35:36Z",
+        "pushed_at": "2026-07-27T04:35:02Z",
+        "homepage": "https://gaomengyang.com/",
+        "topics": [],
+        "top_languages": [
+          "TypeScript",
+          "JavaScript",
+          "Astro",
+          "CSS"
+        ],
+        "language_stats": [
+          {
+            "name": "TypeScript",
+            "bytes": 58292,
+            "ratio": 32.5
+          },
+          {
+            "name": "JavaScript",
+            "bytes": 53018,
+            "ratio": 29.5
+          },
+          {
+            "name": "Astro",
+            "bytes": 44003,
+            "ratio": 24.5
+          },
+          {
+            "name": "CSS",
+            "bytes": 24254,
+            "ratio": 13.5
+          }
+        ]
+      }
+    },
+    "buckets": {
+      "robotics": {
+        "count": 4,
+        "total_stars": 166,
+        "recent": [
+          {
+            "url": "https://github.com/MengyangGao/visual_servo_tracking",
+            "full_name": "MengyangGao/visual_servo_tracking",
+            "name": "visual_servo_tracking",
+            "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
+            "stars": 3,
+            "forks": 0,
+            "language": "Python",
+            "topics": [],
+            "created_at": "2026-04-07T09:58:58Z",
+            "updated_at": "2026-07-31T17:03:33Z",
+            "pushed_at": "2026-07-31T16:31:04Z",
+            "homepage": "",
+            "top_languages": [
+              "Python",
+              "MATLAB"
+            ],
+            "language_stats": [
+              {
+                "name": "Python",
+                "bytes": 594592,
+                "ratio": 80.4
+              },
+              {
+                "name": "MATLAB",
+                "bytes": 145364,
+                "ratio": 19.6
+              }
+            ],
+            "bucket": "robotics",
+            "readme_excerpt": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/visual_servo_tracking/main/mujoco/media/visual-servo-dashboard.gif",
+            "readme_image_local": "/assets/images/repos/MengyangGao__visual_servo_tracking.gif"
+          },
+          {
+            "url": "https://github.com/MengyangGao/hand_exoskeleton",
+            "full_name": "MengyangGao/hand_exoskeleton",
+            "name": "hand_exoskeleton",
+            "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+            "stars": 98,
+            "forks": 10,
+            "language": "C",
+            "topics": [],
+            "created_at": "2024-05-26T09:19:11Z",
+            "updated_at": "2026-07-25T01:39:43Z",
+            "pushed_at": "2026-06-03T15:53:12Z",
+            "homepage": "",
+            "top_languages": [
+              "C",
+              "C++"
+            ],
+            "language_stats": [
+              {
+                "name": "C",
+                "bytes": 38319,
+                "ratio": 81.8
+              },
+              {
+                "name": "C++",
+                "bytes": 8533,
+                "ratio": 18.2
+              }
+            ],
+            "bucket": "robotics",
+            "readme_excerpt": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/hand_exoskeleton/main/images/overview.jpg",
+            "readme_image_local": "/assets/images/repos/MengyangGao__hand_exoskeleton.jpg"
+          },
+          {
+            "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
+            "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
+            "name": "Awesome-Robotics-Embodied-AI",
+            "description": "My notes on Robotics and Embodied AI.",
+            "stars": 17,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "created_at": "2024-11-18T15:54:46Z",
+            "updated_at": "2026-07-27T08:06:24Z",
+            "pushed_at": "2026-04-03T00:11:15Z",
+            "homepage": "",
+            "top_languages": [],
+            "language_stats": [],
+            "bucket": "robotics",
+            "readme_excerpt": "My notes on Robotics and Embodied AI.",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/Awesome-Robotics-Embodied-AI/main/assets/rt2_overview.png",
+            "readme_image_local": "/assets/images/repos/MengyangGao__Awesome-Robotics-Embodied-AI.png"
+          },
+          {
+            "url": "https://github.com/MengyangGao/LLM-Robot",
+            "full_name": "MengyangGao/LLM-Robot",
+            "name": "LLM-Robot",
+            "description": "Use LLM to understand user input and control the robot under ROS",
+            "stars": 48,
+            "forks": 10,
+            "language": "Python",
+            "topics": [],
+            "created_at": "2024-05-05T12:32:19Z",
+            "updated_at": "2026-06-27T16:35:27Z",
+            "pushed_at": "2024-05-31T06:28:14Z",
+            "homepage": "",
+            "top_languages": [
+              "Python"
+            ],
+            "language_stats": [
+              {
+                "name": "Python",
+                "bytes": 20812,
+                "ratio": 100
+              }
+            ],
+            "bucket": "robotics",
+            "readme_excerpt": "Use LLM to understand user input and control the robot under ROS",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/LLM-Robot/main/images/figure0_running.jpg",
+            "readme_image_local": "/assets/images/repos/MengyangGao__LLM-Robot.jpg"
+          }
+        ]
+      },
+      "software": {
+        "count": 5,
+        "total_stars": 101,
+        "recent": [
+          {
+            "url": "https://github.com/MengyangGao/mengyanggao.github.io",
+            "full_name": "MengyangGao/mengyanggao.github.io",
+            "name": "mengyanggao.github.io",
+            "description": "Mengyang Gao's personal website, built with Astro + TypeScript.",
+            "stars": 3,
+            "forks": 0,
+            "language": "TypeScript",
+            "topics": [],
+            "created_at": "2026-01-03T09:56:03Z",
+            "updated_at": "2026-07-27T04:35:36Z",
+            "pushed_at": "2026-07-27T04:35:02Z",
+            "homepage": "https://gaomengyang.com/",
+            "top_languages": [
+              "TypeScript",
+              "JavaScript",
+              "Astro",
+              "CSS"
+            ],
+            "language_stats": [
+              {
+                "name": "TypeScript",
+                "bytes": 58292,
+                "ratio": 32.5
+              },
+              {
+                "name": "JavaScript",
+                "bytes": 53018,
+                "ratio": 29.5
+              },
+              {
+                "name": "Astro",
+                "bytes": 44003,
+                "ratio": 24.5
+              },
+              {
+                "name": "CSS",
+                "bytes": 24254,
+                "ratio": 13.5
+              }
+            ],
+            "bucket": "software",
+            "readme_excerpt": "Mengyang Gao's personal website, built with Astro + TypeScript.",
+            "readme_image": "https://opengraph.githubassets.com/1/MengyangGao/mengyanggao.github.io",
+            "readme_image_local": "/assets/images/repos/MengyangGao__mengyanggao.github.io.png"
+          },
+          {
+            "url": "https://github.com/MengyangGao/infoMatrix",
+            "full_name": "MengyangGao/infoMatrix",
+            "name": "infoMatrix",
+            "description": "InfoMatrix: the next generation information collector, RSS, read-it-later and memos ALL IN ONE.",
+            "stars": 0,
+            "forks": 0,
+            "language": "Rust",
+            "topics": [],
+            "created_at": "2026-03-21T12:35:34Z",
+            "updated_at": "2026-06-22T08:54:11Z",
+            "pushed_at": "2026-06-22T08:54:07Z",
+            "homepage": "",
+            "top_languages": [
+              "Rust",
+              "Swift",
+              "Dart",
+              "Shell"
+            ],
+            "language_stats": [
+              {
+                "name": "Rust",
+                "bytes": 571229,
+                "ratio": 51
+              },
+              {
+                "name": "Swift",
+                "bytes": 278565,
+                "ratio": 24.8
+              },
+              {
+                "name": "Dart",
+                "bytes": 180250,
+                "ratio": 16.1
+              },
+              {
+                "name": "Shell",
+                "bytes": 32088,
+                "ratio": 2.9
+              }
+            ],
+            "bucket": "software",
+            "readme_excerpt": "InfoMatrix: the next generation information collector, RSS, read-it-later and memos ALL IN ONE.",
+            "readme_image": "https://github.com/MengyangGao/infoMatrix/raw/main/assets/README/macos-main.png",
+            "readme_image_local": "/assets/images/repos/MengyangGao__infoMatrix.png"
+          },
+          {
+            "url": "https://github.com/MengyangGao/gzic.online",
+            "full_name": "MengyangGao/gzic.online",
+            "name": "gzic.online",
+            "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+            "stars": 62,
+            "forks": 10,
+            "language": null,
+            "topics": [],
+            "created_at": "2023-03-31T12:45:11Z",
+            "updated_at": "2026-07-16T13:55:01Z",
+            "pushed_at": "2024-09-08T09:21:37Z",
+            "homepage": "https://scut.wiki",
+            "top_languages": [],
+            "language_stats": [],
+            "bucket": "software",
+            "readme_excerpt": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/gzic.online/main/.gitbook/assets/GZIC%E5%B0%8F%E5%9C%88%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7QR%E7%A0%81.png",
+            "readme_image_local": "/assets/images/repos/MengyangGao__gzic.online.png"
+          },
+          {
+            "url": "https://github.com/MengyangGao/RAG-system",
+            "full_name": "MengyangGao/RAG-system",
+            "name": "RAG-system",
+            "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+            "stars": 2,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "created_at": "2024-06-26T16:12:54Z",
+            "updated_at": "2024-07-08T09:02:09Z",
+            "pushed_at": "2024-07-07T15:52:04Z",
+            "homepage": "",
+            "top_languages": [
+              "Python"
+            ],
+            "language_stats": [
+              {
+                "name": "Python",
+                "bytes": 11932,
+                "ratio": 100
+              }
+            ],
+            "bucket": "software",
+            "readme_excerpt": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+            "readme_image": "https://raw.githubusercontent.com/MengyangGao/RAG-system/main/image/overview.png",
+            "readme_image_local": "/assets/images/repos/MengyangGao__RAG-system.png"
+          },
+          {
+            "url": "https://github.com/MengyangGao/flying.gzic.online",
+            "full_name": "MengyangGao/flying.gzic.online",
+            "name": "flying.gzic.online",
+            "description": "华南理工大学飞跃手册",
+            "stars": 34,
+            "forks": 3,
+            "language": null,
+            "topics": [],
+            "created_at": "2023-08-09T04:15:02Z",
+            "updated_at": "2026-06-03T20:03:53Z",
+            "pushed_at": "2024-04-21T16:21:55Z",
+            "homepage": "https://flying.gzic.online",
+            "top_languages": [],
+            "language_stats": [],
+            "bucket": "software",
+            "readme_excerpt": "华南理工大学飞跃手册",
+            "readme_image": "https://i.creativecommons.org/l/by-sa/4.0/88x31.png",
+            "readme_image_local": "/assets/images/repos/MengyangGao__flying.gzic.online.png"
+          }
+        ]
+      }
+    }
+  },
+  "bilibili": {
+    "video": {
+      "url": "https://www.bilibili.com/video/BV1ZXqfYwEed/",
+      "bvid": "BV1ZXqfYwEed",
+      "title": "【钢琴】《Everyday World》+《东京人寿》+《緋色の空》+广州二中29届创音《冰梦》C大调改编串烧",
+      "description": "周末愉快！一下子就十二月啦。\n过段时间再上传一个更丰富织体、更熟练的版本。几首的原调也摸过了，或许再研究研究如何尽可能原调和谐地改编？\n《冰梦》是一首高中校园乐队原创歌曲，来自2019年广州二中的“IF乐队”，详见【【创音】广州二中29th创作人音乐会 IF乐队《冰梦》】 https://www.bilibili.com/video/BV1kJ411x7eY",
+      "cover_image": "http://i1.hdslb.com/bfs/archive/30fb28c9196a8f91f743e7eec36883df7255655d.jpg",
+      "pubdate": 1734273661,
+      "stat": {
+        "view": 663,
+        "like": 10,
+        "reply": 2,
+        "favorite": 1,
+        "coin": 10,
+        "share": 2
+      }
+    },
+    "video_cover_local": "/assets/images/portfolio/bilibili-primary.jpg",
+    "featured_videos": [
+      {
+        "url": "https://www.bilibili.com/video/BV14qdhY5EEb/",
+        "bvid": "BV14qdhY5EEb",
+        "title": "未来革命or资本泡沫——研发投入50年，人形机器人突破了什么？",
+        "description": "从本田ASIMO的黯然退场，到波士顿动力机器人惊艳却难落地的后空翻，再到如今ChatGPT加持下的人形机器人热潮——具身智能究竟是颠覆未来的技术革命，还是资本精心包装的又一场泡沫？\n本视频深度拆解机器人技术70年来的发展困局：为什么传统方法（如精密控制、几何运动学）让机器人行动迟缓如树懒？为什么AI已在语言和视觉上碾压人类，机器人却仍像个“无脑铁疙瘩”？2011年，Pieter Abbeel用强化学习教会机械臂叠毛巾，为何这一技术路径直到今天才迎来爆发？\n我们追溯从达芬奇机械战士、WABOT-1双足机器人到现代人形机器的技术变迁，揭秘激光雷达与视觉感知的路线之争，解析Paden-Kahan运动学子问题如何简化机械臂控制，并探讨大模型能否让机器人真正“开窍”。\n当资本狂欢遭遇现实骨感，具身智能的未来究竟在哪？",
+        "cover_image": "http://i1.hdslb.com/bfs/archive/dc9a60b9a46c40614fe6aa759ec72d3c28671352.jpg",
+        "pubdate": 1744467501,
+        "stat": {
+          "view": 687245,
+          "like": 19557,
+          "reply": 3764,
+          "favorite": 9505,
+          "coin": 6388,
+          "share": 2247
+        }
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1GvGtzjEcc/",
+        "bvid": "BV1GvGtzjEcc",
+        "title": "核事故、机器人、赛博训练——研究了32篇论文，我搞懂了机器人运动背后的秘密【具身智能第2期】",
+        "description": "本视频从近期热门的机器人拳击视频切入，回顾十年间机器人技术的发展历程，通过对比2015年DARPA机器人挑战赛中机器人表现与现今机器人能力的飞跃，揭示人工智能技术尤其是深度强化学习的进步对机器人发展的关键推动作用。视频详细介绍了机器人从简单行走、平衡保持到复杂技能（如跑酷、空翻、打篮球）的学习过程，涉及虚拟仿真训练、强化学习与深度学习结合、传感器数据利用等技术细节，同时强调中国在机器人领域的技术突破与贡献。最后以宇树科技的发展历程为例，展现中国在机器人研发领域的崛起与影响力\n\n我们独家拆解AI机器人封神之路：\n✅ 从\"走两步就摔\"到\"跑酷空翻\"：揭秘深度强化学习如何让机器人自学成材\n✅ 英伟达黑科技Isaac Gym：2000个虚拟机器人集体\"内卷\"的硬核训练法\n✅ 超越波士顿动力！中国团队用\"动作编码器\"实现手脚并用绝技",
+        "cover_image": "http://i1.hdslb.com/bfs/archive/9ef8e96d5b21af977df769fd7599add194fc6594.jpg",
+        "pubdate": 1746026015,
+        "stat": {
+          "view": 2137179,
+          "like": 14837,
+          "reply": 914,
+          "favorite": 8824,
+          "coin": 8506,
+          "share": 1949
+        }
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1saVZz9EGr/",
+        "bvid": "BV1saVZz9EGr",
+        "title": "液压vs电驱——20分钟讲透人形机器人核心动力系统革命",
+        "description": "我们深入探讨了机器人驱动方式的变革，从液压驱动到电机驱动的转变过程。\n详细阐述了液压驱动的基本原理，包括液压泵、管路、阀门等部件如何协同工作来控制机器人关节的运动。然后，文章转向电机驱动，从简单的电磁铁原理出发，逐步介绍了有刷直流电机、无刷直流电机、交流电机（包括异步电机和同步电机）以及直线电机的工作原理和特点。如今已能通过减速器等部件，巧妙解决扭矩不足的问题，实现高效、灵活的关节驱动。展示了电机驱动在机器人领域的崛起和优势，最终得出结论，电机驱动已经成为机器人研究的主流方向，为机器人的未来发展提供了更广阔的空间",
+        "cover_image": "http://i2.hdslb.com/bfs/archive/ad0271e4412d4b26011baccf944d48f2bc5dfeb6.jpg",
+        "pubdate": 1746889214,
+        "stat": {
+          "view": 875827,
+          "like": 25860,
+          "reply": 1607,
+          "favorite": 10926,
+          "coin": 7230,
+          "share": 1562
+        }
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1qQttzbETC/",
+        "bvid": "BV1qQttzbETC",
+        "title": "人形机器人无法逾越的鸿沟是什么？——研究了30篇论文后，我看到了机器人发展的下一步。",
+        "description": "《离开遥控器，机器人能干什么？》\n近年来，人形机器人的发展令人瞩目，但许多人质疑它们是否真的能独立完成任务。本期视频从技术角度探讨机器人自主导航的核心问题——SLAM（同步定位与地图构建）和路径规划算法，分析传统方案与AI新思路的优劣。我们也会思考：为什么成熟的导航技术仍无法满足真正通用的家庭机器人需求？或许，空间智能才是关键。未来，机器人可能需要像生物一样理解空间，才能真正融入人类生活。",
+        "cover_image": "http://i1.hdslb.com/bfs/archive/84bec966e2e3ab27ead11293a6c722bd1884a862.jpg",
+        "pubdate": 1754742159,
+        "stat": {
+          "view": 477487,
+          "like": 14391,
+          "reply": 1876,
+          "favorite": 6941,
+          "coin": 5933,
+          "share": 1343
+        }
+      }
+    ],
+    "featured_cover_images": {
+      "BV14qdhY5EEb": "/assets/images/portfolio/bilibili-series-01.jpg",
+      "BV1GvGtzjEcc": "/assets/images/portfolio/bilibili-series-02.jpg",
+      "BV1saVZz9EGr": "/assets/images/portfolio/bilibili-series-03.jpg",
+      "BV1qQttzbETC": "/assets/images/portfolio/bilibili-series-04.jpg"
+    }
+  }
+}

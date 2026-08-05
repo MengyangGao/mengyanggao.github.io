@@ -1,0 +1,159 @@
+---
+import { getCollection } from 'astro:content';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import LocalizedTextView from './LocalizedText.astro';
+import PlainMediaItem from './PlainMediaItem.astro';
+import { getMetadata } from '../lib/metadata';
+import { buildSelectedWorkCards } from '../lib/page-helpers';
+import { getHomeContent, getSameAsLinks, getSiteContent, getSocialRows } from '../lib/site-content';
+import type { SocialLink } from '../lib/site-content';
+import { resolveSite } from '../lib/site-url';
+
+interface Props {
+  initialLang?: 'en' | 'zh-Hans' | 'zh-Hant';
+}
+
+const { initialLang = 'en' } = Astro.props;
+const siteContent = getSiteContent();
+const homeContent = getHomeContent();
+const { interests, profile, siteName, seo } = siteContent;
+const hasInterests = interests.en.length > 0 || interests.zhHans.length > 0 || interests.zhHant.length > 0;
+const socialRows = getSocialRows();
+const homepageSocialLinks = socialRows
+  .flat()
+  .filter((item): item is SocialLink => !['bilibili', 'x'].includes(item.id));
+const blogEntries = await getCollection('blog', ({ data }) => !data.draft);
+const metadata = getMetadata();
+const site = resolveSite(Astro.site);
+const homepagePath = Astro.url.pathname === '/' || Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+const homeUrl = new URL(homepagePath, site).toString();
+const avatarAlt = profile.name.en || profile.name.zhHans || profile.name.zhHant;
+const selectedWorkCards = buildSelectedWorkCards(homeContent.selectedWork, blogEntries, metadata);
+const markdownProcessor = await createMarkdownProcessor();
+const aboutHtml = {
+  en: (await markdownProcessor.render(homeContent.about.en)).code,
+  zhHans: (await markdownProcessor.render(homeContent.about.zhHans)).code,
+  zhHant: (await markdownProcessor.render(homeContent.about.zhHant)).code,
+};
+const profilePageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  url: homeUrl,
+  name: `${profile.name.en} profile`,
+  inLanguage: ['en', 'zh-CN', 'zh-HK'],
+  mainEntity: {
+    '@type': 'Person',
+    name: profile.name.en,
+    alternateName: [profile.name.zhHans, profile.name.zhHant].filter(Boolean),
+    image: profile.avatar || undefined,
+    email: profile.email,
+    sameAs: getSameAsLinks(),
+    url: homeUrl,
+  },
+};
+---
+
+<BaseLayout title={siteName} description={seo.homeDescription} jsonLd={profilePageJsonLd} pageType="profile" initialLang={initialLang}>
+  <Header active="home" />
+
+  <main id="main-content" class="page-shell">
+    <section class="profile-about-panel">
+      <div class="profile-about-grid">
+        <aside class="profile-side">
+          {profile.avatar && <img class="avatar" src={profile.avatar} alt={avatarAlt} referrerpolicy="no-referrer" />}
+          <div class="profile-side-meta">
+            <h1 class="sidebar-title">
+              <LocalizedTextView text={profile.name} />
+            </h1>
+            <div class="sidebar-sub">
+              <p>{profile.email}</p>
+            </div>
+            <div class="social-links">
+              <div class="social-row">
+                {homepageSocialLinks.map((item) => (
+                  <a
+                    href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  >
+                    <span>{item.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="profile-about-copy">
+          <section class="section first-section about-section">
+            <div class="about-prose lang-zh-hans">
+              <Fragment set:html={aboutHtml.zhHans} />
+            </div>
+            <div class="about-prose lang-zh-hant">
+              <Fragment set:html={aboutHtml.zhHant} />
+            </div>
+            <div class="about-prose lang-en">
+              <Fragment set:html={aboutHtml.en} />
+            </div>
+          </section>
+
+          {hasInterests && (
+            <section class="section">
+              <h2 class="section-title">
+                <LocalizedTextView text={homeContent.interestsTitle} />
+              </h2>
+              {interests.en.length > 0 && (
+                <ul class="list lang-en">
+                  {interests.en.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+              {interests.zhHans.length > 0 && (
+                <ul class="list lang-zh-hans">
+                  {interests.zhHans.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+              {interests.zhHant.length > 0 && (
+                <ul class="list lang-zh-hant">
+                  {interests.zhHant.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+            </section>
+          )}
+        </section>
+      </div>
+    </section>
+
+    <section class="content-single">
+      <section class="section">
+        <div class="section-head section-head-rail">
+          <span class="section-head-line" aria-hidden="true"></span>
+          <h2 class="section-title">
+            <LocalizedTextView text={homeContent.selectedWorkTitle} />
+          </h2>
+          <span class="section-head-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="plain-media-list selected-work-list">
+          {selectedWorkCards.map((item) => (
+            <PlainMediaItem
+              title={item.localizedTitle.en}
+              localizedTitle={item.localizedTitle}
+              description={item.description}
+              href={item.href}
+              image={item.image}
+              reserveImageSpace={true}
+              languages={item.languages}
+              stats={item.stats}
+              resources={item.resources}
+              external={item.external}
+            />
+          ))}
+        </div>
+      </section>
+    </section>
+  </main>
+</BaseLayout>

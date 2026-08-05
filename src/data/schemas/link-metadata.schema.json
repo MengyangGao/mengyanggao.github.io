@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["generated_at", "github", "bilibili"],
+  "properties": {
+    "generated_at": { "type": "string", "minLength": 10 },
+    "github": {
+      "type": "object",
+      "required": ["repos", "buckets"],
+      "properties": {
+        "repos": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              { "$ref": "#/definitions/repoDetail" },
+              { "type": "null" }
+            ]
+          }
+        },
+        "buckets": {
+          "type": "object",
+          "required": ["robotics", "software"],
+          "properties": {
+            "robotics": { "$ref": "#/definitions/repoBucket" },
+            "software": { "$ref": "#/definitions/repoBucket" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "bilibili": {
+      "type": "object",
+      "required": ["video", "video_cover_local", "featured_videos", "featured_cover_images"],
+      "properties": {
+        "video": { "$ref": "#/definitions/videoInfo" },
+        "video_cover_local": { "type": ["string", "null"] },
+        "featured_videos": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/videoInfo" }
+        },
+        "featured_cover_images": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "languageStat": {
+      "type": "object",
+      "required": ["name", "bytes", "ratio"],
+      "properties": {
+        "name": { "type": "string" },
+        "bytes": { "type": "number" },
+        "ratio": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "repoDetail": {
+      "type": "object",
+      "properties": {
+        "url": { "type": ["string", "null"] },
+        "full_name": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "stars": { "type": ["number", "null"] },
+        "forks": { "type": ["number", "null"] },
+        "created_at": { "type": ["string", "null"] },
+        "updated_at": { "type": ["string", "null"] },
+        "pushed_at": { "type": ["string", "null"] },
+        "homepage": { "type": ["string", "null"] },
+        "topics": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "top_languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "language_stats": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/languageStat" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "repoSummary": {
+      "type": "object",
+      "properties": {
+        "full_name": { "type": ["string", "null"] },
+        "name": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "readme_excerpt": { "type": ["string", "null"] },
+        "readme_image": { "type": ["string", "null"] },
+        "readme_image_local": { "type": ["string", "null"] },
+        "stars": { "type": ["number", "null"] },
+        "forks": { "type": ["number", "null"] },
+        "created_at": { "type": ["string", "null"] },
+        "updated_at": { "type": ["string", "null"] },
+        "pushed_at": { "type": ["string", "null"] },
+        "language": { "type": ["string", "null"] },
+        "topics": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "top_languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "language_stats": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/languageStat" }
+        },
+        "homepage": { "type": ["string", "null"] },
+        "bucket": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "repoBucket": {
+      "type": "object",
+      "required": ["count", "total_stars", "recent"],
+      "properties": {
+        "count": { "type": "number" },
+        "total_stars": { "type": "number" },
+        "recent": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/repoSummary" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "videoStat": {
+      "type": ["object", "null"],
+      "properties": {
+        "view": { "type": ["number", "null"] },
+        "like": { "type": ["number", "null"] },
+        "reply": { "type": ["number", "null"] },
+        "favorite": { "type": ["number", "null"] },
+        "coin": { "type": ["number", "null"] },
+        "share": { "type": ["number", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "videoInfo": {
+      "type": ["object", "null"],
+      "properties": {
+        "bvid": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "cover_image": { "type": ["string", "null"] },
+        "pubdate": { "type": ["number", "null"] },
+        "url": { "type": ["string", "null"] },
+        "stat": { "$ref": "#/definitions/videoStat" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

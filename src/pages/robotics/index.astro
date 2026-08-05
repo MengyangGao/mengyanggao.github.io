@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import MediaCollection from '../../components/MediaCollection.astro';
+import PageHero from '../../components/PageHero.astro';
+import { buildRepoMediaCards, buildVideoMediaCards, createCollectionPageJsonLd, createListItem } from '../../lib/page-helpers';
+import { getSiteContent } from '../../lib/site-content';
+import { resolveSite } from '../../lib/site-url';
+import {
+  getFeaturedCoverMap,
+  getMetadata,
+  getRoboticsRepos,
+  getRoboticsVideos
+} from '../../lib/metadata';
+
+const metadata = getMetadata();
+const { pages, siteName, seo } = getSiteContent();
+const pageText = pages.roboticsIndex;
+const repos = [...getRoboticsRepos(metadata)];
+const videos = [...getRoboticsVideos(metadata)];
+const coverMap = getFeaturedCoverMap(metadata);
+const repoCards = buildRepoMediaCards(repos, metadata).sort((a, b) => b.timestamp - a.timestamp);
+const videoCards = buildVideoMediaCards(videos, coverMap).sort((a, b) => b.timestamp - a.timestamp);
+const roboticsFeed = [...repoCards, ...videoCards].sort((a, b) => b.timestamp - a.timestamp);
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/robotics/', site).toString();
+const roboticsCollectionJsonLd = createCollectionPageJsonLd(`${siteName} robotics projects`, pageUrl, [
+  ...repoCards.map((repo, index) => createListItem(repo.title, repo.href, index + 1)),
+  ...videoCards.map((video, index) => createListItem(video.title, video.href, repos.length + index + 1))
+]);
+---
+
+<BaseLayout
+  title={`${pageText.heroTitle.en} | ${siteName}`}
+  description={seo.roboticsDescription}
+  jsonLd={roboticsCollectionJsonLd}
+>
+  <Header active="robotics" />
+
+  <main id="main-content" class="page-shell">
+    <PageHero title={pageText.heroTitle} description={pageText.heroDescription} />
+    <MediaCollection id="robotics-repo-grid" items={roboticsFeed} title={pageText.itemsTitle} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,36 @@
+{
+  "name": "mengyanggao-site",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.17.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "prepare:content": "node tools/prepare-content.mjs",
+    "dev": "npm run prepare:content && astro dev",
+    "build": "npm run prepare:content && npm run validate && astro build",
+    "preview": "npm run build && astro preview",
+    "check": "npm run prepare:content && npm run validate && astro check",
+    "test": "npm run build && node --test",
+    "verify": "npm run prepare:content && npm run validate && astro check && astro build && node --test",
+    "validate": "npm run validate:content && npm run validate:metadata",
+    "validate:content": "node tools/validate-site-content.mjs",
+    "validate:metadata": "node tools/validate-link-metadata.mjs",
+    "fetch:metadata": "node tools/fetch-link-metadata.mjs && npm run validate:metadata"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/markdown-remark": "^7.2.1",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "ajv": "^8.20.0",
+    "astro": "^7.0.7",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  },
+  "dependencies": {
+    "yaml": "2.9.0"
+  }
+}

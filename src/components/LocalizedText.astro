@@ -1,0 +1,15 @@
+---
+import type { LocalizedText as LocalizedTextValue } from '../lib/site-content';
+
+interface Props {
+  text: LocalizedTextValue;
+  prefix?: string;
+  suffix?: string;
+}
+
+const { text, prefix = '', suffix = '' } = Astro.props;
+---
+
+<span class="lang-en">{prefix}{text.en}{suffix}</span>
+<span class="lang-zh-hans">{prefix}{text.zhHans}{suffix}</span>
+<span class="lang-zh-hant">{prefix}{text.zhHant}{suffix}</span>

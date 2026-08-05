@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import LocalizedTextView from '../../components/LocalizedText.astro';
+import PageHero from '../../components/PageHero.astro';
+import { createCollectionPageJsonLd, createListItem } from '../../lib/page-helpers';
+import { getSiteContent } from '../../lib/site-content';
+import { buildArchiveItems } from '../../lib/archive';
+import { resolveSite } from '../../lib/site-url';
+const { pages, siteName, seo } = getSiteContent();
+const pageText = pages.archivesIndex;
+const localPosts = await getCollection('blog', ({ data }) => !data.draft);
+const archiveItems = buildArchiveItems(localPosts);
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/archives/', site).toString();
+const archivesJsonLd = createCollectionPageJsonLd(
+  `${siteName} archives`,
+  pageUrl,
+  archiveItems
+    .filter((item) => item.url && item.url !== '#')
+    .map((item, index) =>
+      createListItem(item.title, item.url.startsWith('http') ? item.url : new URL(item.url, site).toString(), index + 1)
+    )
+);
+---
+
+<BaseLayout
+  title={`${pageText.heroTitle.en} | ${siteName}`}
+  description={seo.archivesDescription}
+  jsonLd={archivesJsonLd}
+>
+  <Header active="archives" />
+
+  <main id="main-content" class="page-shell">
+    <PageHero title={pageText.heroTitle} description={pageText.heroDescription} />
+
+    <section class="section">
+      <div class="archive-list archive-list-compact" id="archive-list">
+        {archiveItems.map((item) => (
+          <article
+            class="archive-item archive-item-compact"
+          >
+            <p class="archive-date-inline">{item.dateLabel}</p>
+            <span class="archive-tag-inline">
+              <LocalizedTextView text={item.sectionLabel} prefix="[" suffix="]" />
+            </span>
+            <a class="archive-title-link" href={item.url} target={item.external ? '_blank' : undefined} rel={item.external ? 'noopener noreferrer' : undefined}>
+              {item.title}
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

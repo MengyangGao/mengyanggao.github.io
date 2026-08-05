@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import MediaCollection from '../../components/MediaCollection.astro';
+import PageHero from '../../components/PageHero.astro';
+import { buildRepoMediaCards, createCollectionPageJsonLd, createListItem } from '../../lib/page-helpers';
+import { getSiteContent } from '../../lib/site-content';
+import { resolveSite } from '../../lib/site-url';
+import { getMetadata, getSoftwareRepos } from '../../lib/metadata';
+
+const metadata = getMetadata();
+const { pages, siteName, seo } = getSiteContent();
+const pageText = pages.softwareIndex;
+const repos = [...getSoftwareRepos(metadata)];
+const repoCards = buildRepoMediaCards(repos, metadata).sort((a, b) => b.timestamp - a.timestamp);
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/software/', site).toString();
+const softwareCollectionJsonLd = createCollectionPageJsonLd(
+  `${siteName} software projects`,
+  pageUrl,
+  repoCards.map((repo, index) => createListItem(repo.title, repo.href, index + 1))
+);
+---
+
+<BaseLayout
+  title={`${pageText.heroTitle.en} | ${siteName}`}
+  description={seo.softwareDescription}
+  jsonLd={softwareCollectionJsonLd}
+>
+  <Header active="software" />
+
+  <main id="main-content" class="page-shell">
+    <PageHero title={pageText.heroTitle} description={pageText.heroDescription} />
+    <MediaCollection id="software-repo-grid" items={repoCards} title={pageText.itemsTitle} />
+  </main>
+</BaseLayout>

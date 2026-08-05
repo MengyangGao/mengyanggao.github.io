@@ -1,0 +1,42 @@
+name: Website Feedback
+description: Share suggestions or report issues about this site
+labels:
+  - feedback
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the website is this about?
+      options:
+        - Home
+        - Blog
+        - Robotics
+        - Software
+        - Music
+        - Archives
+        - Performance / SEO
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the issue or suggestion.
+      placeholder: Please include page URL and expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Optional. Share a concrete change idea.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: Leave your contact if you want follow-up.

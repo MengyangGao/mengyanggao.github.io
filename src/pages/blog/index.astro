@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import PageHero from '../../components/PageHero.astro';
+import PlainMediaItem from '../../components/PlainMediaItem.astro';
+import { buildBlogIndexCards, createCollectionPageJsonLd, createListItem } from '../../lib/page-helpers';
+import { getSiteContent } from '../../lib/site-content';
+import { resolveSite } from '../../lib/site-url';
+
+const { pages, siteName, seo } = getSiteContent();
+const pageText = pages.blogIndex;
+const localPosts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.publish_date.getTime() - a.data.publish_date.getTime(),
+);
+const localCards = buildBlogIndexCards(localPosts, pages.blogPost.readTime.en);
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/blog/', site).toString();
+const blogCollectionJsonLd = createCollectionPageJsonLd(
+  `${siteName} blog`,
+  pageUrl,
+  localCards.map((post, index) => createListItem(post.title, new URL(post.href, site).toString(), index + 1))
+);
+---
+
+<BaseLayout title={`${pageText.heroTitle.en} | ${siteName}`} description={seo.blogDescription} jsonLd={blogCollectionJsonLd}>
+  <Header active="blog" />
+
+  <main id="main-content" class="page-shell">
+    <PageHero title={pageText.heroTitle} description={pageText.heroDescription} />
+
+    <section class="section">
+      <div class="blog-rows" id="blog-post-grid">
+        {localCards.map((post) => (
+          <PlainMediaItem
+            title={post.title}
+            href={post.href}
+            external={post.external}
+            image={post.image || null}
+            secondaryUrl={post.sourceUrl}
+            description={post.description}
+            stats={[
+              { platform: 'text', icon: 'calendar', value: post.publishDate },
+              { platform: 'text', value: post.readTime },
+            ]}
+          />
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

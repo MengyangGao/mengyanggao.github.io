@@ -1,0 +1,103 @@
+---
+import type { LocalizedText } from '../lib/site-content';
+import type { CardStat, LanguageStat } from '../lib/page-helpers';
+import LocalizedTextView from './LocalizedText.astro';
+import MediaStatIcon from './MediaStatIcon.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  localizedTitle?: LocalizedText;
+  href?: string;
+  image?: string | null;
+  secondaryUrl?: string;
+  languages?: LanguageStat[];
+  stats?: CardStat[];
+  resources?: Array<{ label: string; href: string }>;
+  external?: boolean;
+  reserveImageSpace?: boolean;
+}
+
+const {
+  title,
+  description = '',
+  localizedTitle = null,
+  href = '#',
+  image = null,
+  secondaryUrl = '',
+  languages = [],
+  stats = [],
+  resources = [],
+  external = true,
+  reserveImageSpace = false,
+} = Astro.props;
+
+const isLocalizedValue = (value: unknown): value is LocalizedText =>
+  Boolean(value && typeof value === 'object' && 'en' in value && 'zhHans' in value && 'zhHant' in value);
+---
+
+<article class:list={{ 'plain-media-item': true, 'has-image': Boolean(image) || reserveImageSpace }}>
+  {
+    (image || reserveImageSpace) && (
+      <div class="plain-media-figure">
+        {
+          image ? (
+            <img class="plain-media-thumb" src={image} alt={`${title} cover`} loading="lazy" />
+          ) : (
+            <div class="plain-media-thumb plain-media-thumb-placeholder" aria-hidden="true"></div>
+          )
+        }
+      </div>
+    )
+  }
+  <div class="plain-media-body">
+    <h3 class="plain-media-title">
+      <a
+        class="plain-media-link"
+        href={href}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
+      >
+        {localizedTitle ? <LocalizedTextView text={localizedTitle} /> : title}
+      </a>
+    </h3>
+    {secondaryUrl && <p class="plain-media-url">{secondaryUrl}</p>}
+    {description && <p class="plain-media-desc">{description}</p>}
+
+    {
+      resources.length > 0 && (
+        <nav class="plain-media-resources" aria-label="Research resources">
+          {resources.map((resource) => (
+            <span class="plain-media-resource">
+              [<a href={resource.href} target="_blank" rel="noopener noreferrer">{resource.label}</a>]
+            </span>
+          ))}
+        </nav>
+      )
+    }
+
+    {
+      (languages.length > 0 || stats.length > 0) && (
+        <div class="media-stats plain-media-stats">
+          {languages.map((item) => (
+            <span class="media-stat media-stat-language">
+              <span class="media-language-dot" style={item.color ? `background:${item.color}` : undefined}></span>
+              <span>{item.name}</span>
+              {typeof item.ratio === 'number' && <span class="media-language-ratio">{Math.round(item.ratio)}%</span>}
+            </span>
+          ))}
+          {stats.map((item) => (
+            <span class:list={['media-stat', item.platform === 'text' ? 'media-stat-text' : 'media-stat-github']}>
+              {
+                item.icon && <MediaStatIcon icon={item.icon} />
+              }
+              <span class="media-stat-value">
+                {isLocalizedValue(item.value) ? <LocalizedTextView text={item.value} /> : item.value}
+              </span>
+            </span>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</article>

@@ -1,0 +1,30 @@
+---
+import type { MediaCard } from '../lib/page-helpers';
+import type { LocalizedText } from '../lib/site-content';
+import LocalizedTextView from './LocalizedText.astro';
+import PlainMediaItem from './PlainMediaItem.astro';
+
+interface Props {
+  id: string;
+  items: MediaCard[];
+  title: LocalizedText;
+}
+
+const { id, items, title } = Astro.props;
+---
+
+<section class="section">
+  <h2 class="sr-only"><LocalizedTextView text={title} /></h2>
+  <div class="plain-media-list" id={id}>
+    {items.map((item) => (
+      <PlainMediaItem
+        title={item.title}
+        description={item.description}
+        href={item.href}
+        image={item.image}
+        languages={item.languages}
+        stats={item.stats}
+      />
+    ))}
+  </div>
+</section>

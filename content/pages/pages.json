@@ -1,0 +1,148 @@
+{
+  "seo": {
+    "defaultDescription": "Modern portfolio for Mengyang Gao.",
+    "homeDescription": "Modern portfolio for Mengyang Gao.",
+    "blogDescription": "Blog and engineering notes.",
+    "roboticsDescription": "Robotics and embodied AI projects.",
+    "softwareDescription": "Software and platform projects.",
+    "musicDescription": "Piano performances and music-related creations.",
+    "archivesDescription": "Timeline archive across blog, robotics, software and music.",
+    "wechatDescription": "Wechat QR code for contact."
+  },
+  "comments": {
+    "enabled": true,
+    "provider": "giscus",
+    "repo": "mengyanggao/mengyanggao.github.io",
+    "repoId": "R_kgDOQy8SNw",
+    "category": "General",
+    "categoryId": "DIC_kwDOQy8SN84C33eF",
+    "mapping": "pathname",
+    "term": "",
+    "strict": "0",
+    "reactionsEnabled": "1",
+    "emitMetadata": "0",
+    "inputPosition": "top",
+    "lang": "zh-CN",
+    "themeLight": "light",
+    "themeDark": "dark",
+    "title": {
+      "en": "Comments",
+      "zhHans": "评论",
+      "zhHant": "評論"
+    },
+    "hint": {
+      "en": "Giscus comments are ready here. If you fork this site, update `comments.repoId` and `comments.categoryId` in `content/pages/pages.json` to match your repository's Discussions setup.",
+      "zhHans": "这里的 Giscus 评论已经可用。如果你 fork 这个站点，请更新 `content/pages/pages.json` 里的 `comments.repoId` 和 `comments.categoryId`，以匹配你的仓库 Discussions 配置。",
+      "zhHant": "這裡的 Giscus 評論已經可用。如果你 fork 這個站點，請更新 `content/pages/pages.json` 裡的 `comments.repoId` 和 `comments.categoryId`，以匹配你的倉庫 Discussions 設定。"
+    }
+  },
+  "blogIndex": {
+    "heroTitle": {
+      "en": "Blog",
+      "zhHans": "博客",
+      "zhHant": "博客"
+    },
+    "heroDescription": {
+      "en": "My notes, articles and thoughts.",
+      "zhHans": "我的笔记，文章和思考。",
+      "zhHant": "我的筆記、文章和思考。"
+    }
+  },
+  "blogPost": {
+    "publishedAtLabel": {
+      "en": "Published at:",
+      "zhHans": "发表于：",
+      "zhHant": "發表於："
+    },
+    "modifiedAtLabel": {
+      "en": "Modified at:",
+      "zhHans": "修改于：",
+      "zhHant": "修改於："
+    },
+    "alsoAtLabel": {
+      "en": "Also at:",
+      "zhHans": "另见：",
+      "zhHant": "另見："
+    },
+    "readTime": {
+      "en": "{count} min read",
+      "zhHans": "约 {count} 分钟",
+      "zhHant": "約 {count} 分鐘"
+    }
+  },
+  "roboticsIndex": {
+    "heroTitle": {
+      "en": "Robotics",
+      "zhHans": "机器人",
+      "zhHant": "機器人"
+    },
+    "heroDescription": {
+      "en": "My exploration in real world.",
+      "zhHans": "我对物理世界的探索。",
+      "zhHant": "我對物理世界的探索。"
+    },
+    "itemsTitle": {
+      "en": "Robotics items",
+      "zhHans": "机器人条目",
+      "zhHant": "機器人條目"
+    }
+  },
+  "softwareIndex": {
+    "heroTitle": {
+      "en": "Software",
+      "zhHans": "软件",
+      "zhHant": "軟體"
+    },
+    "heroDescription": {
+      "en": "My exploration in digital world.",
+      "zhHans": "我对数字世界的探索。",
+      "zhHant": "我對數位世界的探索。"
+    },
+    "itemsTitle": {
+      "en": "Software items",
+      "zhHans": "软件条目",
+      "zhHant": "軟體條目"
+    }
+  },
+  "musicIndex": {
+    "heroTitle": {
+      "en": "Music",
+      "zhHans": "音乐",
+      "zhHant": "音樂"
+    },
+    "heroDescription": {
+      "en": "Piano performance videos and music-related creations.",
+      "zhHans": "钢琴演奏视频与音乐相关创作。",
+      "zhHant": "鋼琴演奏影片與音樂相關創作。"
+    },
+    "itemsTitle": {
+      "en": "Music videos",
+      "zhHans": "音乐视频",
+      "zhHant": "音樂影片"
+    }
+  },
+  "archivesIndex": {
+    "heroTitle": {
+      "en": "Archives",
+      "zhHans": "归档",
+      "zhHant": "歸檔"
+    },
+    "heroDescription": {
+      "en": "",
+      "zhHans": "",
+      "zhHant": ""
+    }
+  },
+  "contact": {
+    "wechatTitle": {
+      "en": "Wechat",
+      "zhHans": "微信",
+      "zhHant": "微信"
+    },
+    "wechatAlt": {
+      "en": "Wechat QR code",
+      "zhHans": "微信二维码",
+      "zhHant": "微信二維碼"
+    }
+  }
+}

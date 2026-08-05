@@ -1,0 +1,118 @@
+---
+import { getSiteContent } from '../lib/site-content';
+
+const { comments, pages } = getSiteContent();
+const isConfigured = Boolean(
+  comments.enabled &&
+  comments.provider === 'giscus' &&
+  comments.repo &&
+  comments.repoId &&
+  comments.category &&
+  comments.categoryId
+);
+const shouldRender = comments.enabled && (isConfigured || import.meta.env.DEV);
+---
+
+{
+  shouldRender && (
+    <section class="panel comments-panel">
+      <div class="section-head">
+        <h2 class="section-title">
+          <span class="lang-en">{pages.comments.title.en}</span>
+          <span class="lang-zh-hans">{pages.comments.title.zhHans}</span>
+          <span class="lang-zh-hant">{pages.comments.title.zhHant}</span>
+        </h2>
+      </div>
+      {isConfigured ? (
+        <div
+          class="giscus-root"
+          data-giscus-root
+          data-repo={comments.repo}
+          data-repo-id={comments.repoId}
+          data-category={comments.category}
+          data-category-id={comments.categoryId}
+          data-mapping={comments.mapping}
+          data-term={comments.term || ''}
+          data-strict={comments.strict}
+          data-reactions-enabled={comments.reactionsEnabled}
+          data-emit-metadata={comments.emitMetadata}
+          data-input-position={comments.inputPosition}
+          data-lang={comments.lang}
+          data-theme-light={comments.themeLight}
+          data-theme-dark={comments.themeDark}
+        />
+      ) : (
+        import.meta.env.DEV && (
+          <p class="comments-hint">
+            <span class="lang-en">{pages.comments.hint.en}</span>
+            <span class="lang-zh-hans">{pages.comments.hint.zhHans}</span>
+            <span class="lang-zh-hant">{pages.comments.hint.zhHant}</span>
+          </p>
+        )
+      )}
+    </section>
+  )
+}
+
+{
+  isConfigured && (
+    <script is:inline>
+      (() => {
+        const root = document.querySelector('[data-giscus-root]');
+        if (!(root instanceof HTMLElement)) return;
+
+        const script = document.createElement('script');
+        script.src = 'https://giscus.app/client.js';
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+        script.setAttribute('data-repo', root.dataset.repo || '');
+        script.setAttribute('data-repo-id', root.dataset.repoId || '');
+        script.setAttribute('data-category', root.dataset.category || '');
+        script.setAttribute('data-category-id', root.dataset.categoryId || '');
+        script.setAttribute('data-mapping', root.dataset.mapping || 'pathname');
+        script.setAttribute('data-term', root.dataset.term || '');
+        script.setAttribute('data-strict', root.dataset.strict || '0');
+        script.setAttribute('data-reactions-enabled', root.dataset.reactionsEnabled || '1');
+        script.setAttribute('data-emit-metadata', root.dataset.emitMetadata || '0');
+        script.setAttribute('data-input-position', root.dataset.inputPosition || 'top');
+
+        const currentTheme = () =>
+          document.documentElement.dataset.theme === 'dark'
+            ? (root.dataset.themeDark || 'dark')
+            : (root.dataset.themeLight || 'light');
+        const currentLang = () => {
+          const lang = document.documentElement.dataset.lang;
+          if (lang === 'en') return 'en';
+          if (lang === 'zh-Hant') return 'zh-HK';
+          return 'zh-CN';
+        };
+
+        script.setAttribute('data-theme', currentTheme());
+        script.setAttribute('data-lang', currentLang());
+        root.appendChild(script);
+
+        const syncGiscus = () => {
+          const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+          if (!iframe?.contentWindow) return;
+          iframe.contentWindow.postMessage(
+            {
+              giscus: {
+                setConfig: {
+                  theme: currentTheme(),
+                  lang: currentLang(),
+                },
+              },
+            },
+            'https://giscus.app'
+          );
+        };
+
+        const observer = new MutationObserver(() => syncGiscus());
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme', 'data-lang', 'lang'],
+        });
+      })();
+    </script>
+  )
+}

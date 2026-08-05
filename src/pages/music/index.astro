@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import MediaCollection from '../../components/MediaCollection.astro';
+import PageHero from '../../components/PageHero.astro';
+import { buildVideoMediaCards, createCollectionPageJsonLd } from '../../lib/page-helpers';
+import { getSiteContent } from '../../lib/site-content';
+import { resolveSite } from '../../lib/site-url';
+import { getMetadata, getMusicVideoCover, getPrimaryMusicVideo } from '../../lib/metadata';
+
+const metadata = getMetadata();
+const { pages, siteName, seo } = getSiteContent();
+const pageText = pages.musicIndex;
+const primary = getPrimaryMusicVideo(metadata);
+const primaryCover = getMusicVideoCover(primary, metadata);
+const musicCards = buildVideoMediaCards(primary ? [primary] : [], primary && primary.bvid && primaryCover ? { [primary.bvid]: primaryCover } : {});
+const site = resolveSite(Astro.site);
+const pageUrl = new URL('/music/', site).toString();
+const musicSchemas: Record<string, unknown>[] = [createCollectionPageJsonLd(`${siteName} music`, pageUrl)];
+
+if (primary) {
+  musicSchemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: primary.title || pageText.heroTitle.en,
+    description: primary.description || pageText.heroDescription.en,
+    thumbnailUrl: primaryCover || undefined,
+    uploadDate: primary.pubdate ? new Date(primary.pubdate * 1000).toISOString() : undefined,
+    interactionStatistic: {
+      '@type': 'InteractionCounter',
+      interactionType: { '@type': 'WatchAction' },
+      userInteractionCount: primary.stat?.view || 0
+    },
+    url: primary.url || pageUrl,
+    inLanguage: ['zh-CN', 'zh-HK', 'en']
+  });
+}
+---
+
+<BaseLayout
+  title={`${pageText.heroTitle.en} | ${siteName}`}
+  description={seo.musicDescription}
+  jsonLd={musicSchemas}
+>
+  <Header active="music" />
+
+  <main id="main-content" class="page-shell">
+    <PageHero title={pageText.heroTitle} description={pageText.heroDescription} />
+    {primary && <MediaCollection id="music-video-grid" items={musicCards} title={pageText.itemsTitle} />}
+  </main>
+</BaseLayout>
