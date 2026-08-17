@@ -1,71 +1,7 @@
 {
-  "generated_at": "2026-08-10T03:09:41.002Z",
+  "generated_at": "2026-08-17T02:18:07.185Z",
   "github": {
     "repos": {
-      "MengyangGao/Awesome-Robotics-Embodied-AI": {
-        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
-        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
-        "description": "My notes on Robotics and Embodied AI.",
-        "stars": 17,
-        "forks": 1,
-        "created_at": "2024-11-18T15:54:46Z",
-        "updated_at": "2026-07-27T08:06:24Z",
-        "pushed_at": "2026-04-03T00:11:15Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
-      "MengyangGao/hand_exoskeleton": {
-        "url": "https://github.com/MengyangGao/hand_exoskeleton",
-        "full_name": "MengyangGao/hand_exoskeleton",
-        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 100,
-        "forks": 10,
-        "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-08-03T06:06:16Z",
-        "pushed_at": "2026-06-03T15:53:12Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [
-          "C",
-          "C++"
-        ],
-        "language_stats": [
-          {
-            "name": "C",
-            "bytes": 38319,
-            "ratio": 81.8
-          },
-          {
-            "name": "C++",
-            "bytes": 8533,
-            "ratio": 18.2
-          }
-        ]
-      },
-      "MengyangGao/LLM-Robot": {
-        "url": "https://github.com/MengyangGao/LLM-Robot",
-        "full_name": "MengyangGao/LLM-Robot",
-        "description": "Use LLM to understand user input and control the robot under ROS",
-        "stars": 48,
-        "forks": 10,
-        "created_at": "2024-05-05T12:32:19Z",
-        "updated_at": "2026-06-27T16:35:27Z",
-        "pushed_at": "2024-05-31T06:28:14Z",
-        "homepage": null,
-        "topics": [],
-        "top_languages": [
-          "Python"
-        ],
-        "language_stats": [
-          {
-            "name": "Python",
-            "bytes": 20812,
-            "ratio": 100
-          }
-        ]
-      },
       "MengyangGao/visual_servo_tracking": {
         "url": "https://github.com/MengyangGao/visual_servo_tracking",
         "full_name": "MengyangGao/visual_servo_tracking",
@@ -94,19 +30,69 @@
           }
         ]
       },
-      "MengyangGao/flying.gzic.online": {
-        "url": "https://github.com/MengyangGao/flying.gzic.online",
-        "full_name": "MengyangGao/flying.gzic.online",
-        "description": "华南理工大学飞跃手册",
-        "stars": 34,
-        "forks": 3,
-        "created_at": "2023-08-09T04:15:02Z",
-        "updated_at": "2026-06-03T20:03:53Z",
-        "pushed_at": "2024-04-21T16:21:55Z",
-        "homepage": "https://flying.gzic.online",
+      "MengyangGao/LLM-Robot": {
+        "url": "https://github.com/MengyangGao/LLM-Robot",
+        "full_name": "MengyangGao/LLM-Robot",
+        "description": "Use LLM to understand user input and control the robot under ROS",
+        "stars": 48,
+        "forks": 10,
+        "created_at": "2024-05-05T12:32:19Z",
+        "updated_at": "2026-06-27T16:35:27Z",
+        "pushed_at": "2024-05-31T06:28:14Z",
+        "homepage": null,
+        "topics": [],
+        "top_languages": [
+          "Python"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 20812,
+            "ratio": 100
+          }
+        ]
+      },
+      "MengyangGao/Awesome-Robotics-Embodied-AI": {
+        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
+        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
+        "description": "My notes on Robotics and Embodied AI.",
+        "stars": 17,
+        "forks": 1,
+        "created_at": "2024-11-18T15:54:46Z",
+        "updated_at": "2026-07-27T08:06:24Z",
+        "pushed_at": "2026-04-03T00:11:15Z",
+        "homepage": "",
         "topics": [],
         "top_languages": [],
         "language_stats": []
+      },
+      "MengyangGao/hand_exoskeleton": {
+        "url": "https://github.com/MengyangGao/hand_exoskeleton",
+        "full_name": "MengyangGao/hand_exoskeleton",
+        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+        "stars": 101,
+        "forks": 10,
+        "created_at": "2024-05-26T09:19:11Z",
+        "updated_at": "2026-08-14T04:48:14Z",
+        "pushed_at": "2026-06-03T15:53:12Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "C",
+          "C++"
+        ],
+        "language_stats": [
+          {
+            "name": "C",
+            "bytes": 38319,
+            "ratio": 81.8
+          },
+          {
+            "name": "C++",
+            "bytes": 8533,
+            "ratio": 18.2
+          }
+        ]
       },
       "MengyangGao/gzic.online": {
         "url": "https://github.com/MengyangGao/gzic.online",
@@ -118,6 +104,20 @@
         "updated_at": "2026-07-16T13:55:01Z",
         "pushed_at": "2024-09-08T09:21:37Z",
         "homepage": "https://scut.wiki",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 34,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-06-03T20:03:53Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
         "topics": [],
         "top_languages": [],
         "language_stats": []
@@ -191,8 +191,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-08-05T17:16:36Z",
-        "pushed_at": "2026-08-05T17:15:42Z",
+        "updated_at": "2026-08-10T03:09:52Z",
+        "pushed_at": "2026-08-10T03:09:48Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -228,7 +228,7 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 168,
+        "total_stars": 169,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -269,12 +269,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 100,
+            "stars": 101,
             "forks": 10,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-08-03T06:06:16Z",
+            "updated_at": "2026-08-14T04:48:14Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -362,8 +362,8 @@
             "language": "TypeScript",
             "topics": [],
             "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-08-05T17:16:36Z",
-            "pushed_at": "2026-08-05T17:15:42Z",
+            "updated_at": "2026-08-10T03:09:52Z",
+            "pushed_at": "2026-08-10T03:09:48Z",
             "homepage": "https://gaomengyang.com/",
             "top_languages": [
               "TypeScript",
@@ -525,7 +525,7 @@
       "cover_image": "http://i1.hdslb.com/bfs/archive/30fb28c9196a8f91f743e7eec36883df7255655d.jpg",
       "pubdate": 1734273661,
       "stat": {
-        "view": 663,
+        "view": 664,
         "like": 10,
         "reply": 2,
         "favorite": 1,
@@ -543,11 +543,11 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/dc9a60b9a46c40614fe6aa759ec72d3c28671352.jpg",
         "pubdate": 1744467501,
         "stat": {
-          "view": 687570,
-          "like": 19559,
+          "view": 687897,
+          "like": 19561,
           "reply": 3766,
-          "favorite": 9498,
-          "coin": 6388,
+          "favorite": 9495,
+          "coin": 6389,
           "share": 2248
         }
       },
@@ -559,12 +559,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/9ef8e96d5b21af977df769fd7599add194fc6594.jpg",
         "pubdate": 1746026015,
         "stat": {
-          "view": 2137467,
-          "like": 14841,
+          "view": 2137797,
+          "like": 14848,
           "reply": 914,
-          "favorite": 8827,
-          "coin": 8510,
-          "share": 1950
+          "favorite": 8832,
+          "coin": 8517,
+          "share": 1951
         }
       },
       {
@@ -575,12 +575,12 @@
         "cover_image": "http://i2.hdslb.com/bfs/archive/ad0271e4412d4b26011baccf944d48f2bc5dfeb6.jpg",
         "pubdate": 1746889214,
         "stat": {
-          "view": 876246,
-          "like": 25865,
+          "view": 876658,
+          "like": 25872,
           "reply": 1607,
-          "favorite": 10928,
-          "coin": 7232,
-          "share": 1562
+          "favorite": 10930,
+          "coin": 7236,
+          "share": 1564
         }
       },
       {
@@ -591,12 +591,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/84bec966e2e3ab27ead11293a6c722bd1884a862.jpg",
         "pubdate": 1754742159,
         "stat": {
-          "view": 478081,
-          "like": 14396,
+          "view": 478665,
+          "like": 14402,
           "reply": 1876,
-          "favorite": 6942,
-          "coin": 5935,
-          "share": 1343
+          "favorite": 6944,
+          "coin": 5941,
+          "share": 1344
         }
       }
     ],
