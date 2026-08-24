@@ -1,7 +1,29 @@
 {
-  "generated_at": "2026-08-17T02:18:07.185Z",
+  "generated_at": "2026-08-24T02:21:00.601Z",
   "github": {
     "repos": {
+      "MengyangGao/LLM-Robot": {
+        "url": "https://github.com/MengyangGao/LLM-Robot",
+        "full_name": "MengyangGao/LLM-Robot",
+        "description": "Use LLM to understand user input and control the robot under ROS",
+        "stars": 48,
+        "forks": 10,
+        "created_at": "2024-05-05T12:32:19Z",
+        "updated_at": "2026-06-27T16:35:27Z",
+        "pushed_at": "2024-05-31T06:28:14Z",
+        "homepage": null,
+        "topics": [],
+        "top_languages": [
+          "Python"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 20812,
+            "ratio": 100
+          }
+        ]
+      },
       "MengyangGao/visual_servo_tracking": {
         "url": "https://github.com/MengyangGao/visual_servo_tracking",
         "full_name": "MengyangGao/visual_servo_tracking",
@@ -30,28 +52,6 @@
           }
         ]
       },
-      "MengyangGao/LLM-Robot": {
-        "url": "https://github.com/MengyangGao/LLM-Robot",
-        "full_name": "MengyangGao/LLM-Robot",
-        "description": "Use LLM to understand user input and control the robot under ROS",
-        "stars": 48,
-        "forks": 10,
-        "created_at": "2024-05-05T12:32:19Z",
-        "updated_at": "2026-06-27T16:35:27Z",
-        "pushed_at": "2024-05-31T06:28:14Z",
-        "homepage": null,
-        "topics": [],
-        "top_languages": [
-          "Python"
-        ],
-        "language_stats": [
-          {
-            "name": "Python",
-            "bytes": 20812,
-            "ratio": 100
-          }
-        ]
-      },
       "MengyangGao/Awesome-Robotics-Embodied-AI": {
         "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
         "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
@@ -70,10 +70,10 @@
         "url": "https://github.com/MengyangGao/hand_exoskeleton",
         "full_name": "MengyangGao/hand_exoskeleton",
         "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 101,
-        "forks": 10,
+        "stars": 102,
+        "forks": 11,
         "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-08-14T04:48:14Z",
+        "updated_at": "2026-08-21T05:41:17Z",
         "pushed_at": "2026-06-03T15:53:12Z",
         "homepage": "",
         "topics": [],
@@ -91,6 +91,46 @@
             "name": "C++",
             "bytes": 8533,
             "ratio": 18.2
+          }
+        ]
+      },
+      "MengyangGao/infoMatrix": {
+        "url": "https://github.com/MengyangGao/infoMatrix",
+        "full_name": "MengyangGao/infoMatrix",
+        "description": "InfoMatrix: the next generation information collector, RSS, read-it-later and memos ALL IN ONE.",
+        "stars": 0,
+        "forks": 0,
+        "created_at": "2026-03-21T12:35:34Z",
+        "updated_at": "2026-06-22T08:54:11Z",
+        "pushed_at": "2026-06-22T08:54:07Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "Rust",
+          "Swift",
+          "Dart",
+          "Shell"
+        ],
+        "language_stats": [
+          {
+            "name": "Rust",
+            "bytes": 571229,
+            "ratio": 51
+          },
+          {
+            "name": "Swift",
+            "bytes": 278565,
+            "ratio": 24.8
+          },
+          {
+            "name": "Dart",
+            "bytes": 180250,
+            "ratio": 16.1
+          },
+          {
+            "name": "Shell",
+            "bytes": 32088,
+            "ratio": 2.9
           }
         ]
       },
@@ -144,46 +184,6 @@
           }
         ]
       },
-      "MengyangGao/infoMatrix": {
-        "url": "https://github.com/MengyangGao/infoMatrix",
-        "full_name": "MengyangGao/infoMatrix",
-        "description": "InfoMatrix: the next generation information collector, RSS, read-it-later and memos ALL IN ONE.",
-        "stars": 0,
-        "forks": 0,
-        "created_at": "2026-03-21T12:35:34Z",
-        "updated_at": "2026-06-22T08:54:11Z",
-        "pushed_at": "2026-06-22T08:54:07Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [
-          "Rust",
-          "Swift",
-          "Dart",
-          "Shell"
-        ],
-        "language_stats": [
-          {
-            "name": "Rust",
-            "bytes": 571229,
-            "ratio": 51
-          },
-          {
-            "name": "Swift",
-            "bytes": 278565,
-            "ratio": 24.8
-          },
-          {
-            "name": "Dart",
-            "bytes": 180250,
-            "ratio": 16.1
-          },
-          {
-            "name": "Shell",
-            "bytes": 32088,
-            "ratio": 2.9
-          }
-        ]
-      },
       "MengyangGao/mengyanggao.github.io": {
         "url": "https://github.com/MengyangGao/mengyanggao.github.io",
         "full_name": "MengyangGao/mengyanggao.github.io",
@@ -191,8 +191,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-08-10T03:09:52Z",
-        "pushed_at": "2026-08-10T03:09:48Z",
+        "updated_at": "2026-08-17T02:18:33Z",
+        "pushed_at": "2026-08-17T02:18:15Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -228,7 +228,7 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 169,
+        "total_stars": 170,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -269,12 +269,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 101,
-            "forks": 10,
+            "stars": 102,
+            "forks": 11,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-08-14T04:48:14Z",
+            "updated_at": "2026-08-21T05:41:17Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -362,8 +362,8 @@
             "language": "TypeScript",
             "topics": [],
             "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-08-10T03:09:52Z",
-            "pushed_at": "2026-08-10T03:09:48Z",
+            "updated_at": "2026-08-17T02:18:33Z",
+            "pushed_at": "2026-08-17T02:18:15Z",
             "homepage": "https://gaomengyang.com/",
             "top_languages": [
               "TypeScript",
@@ -543,12 +543,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/dc9a60b9a46c40614fe6aa759ec72d3c28671352.jpg",
         "pubdate": 1744467501,
         "stat": {
-          "view": 687897,
-          "like": 19561,
-          "reply": 3766,
-          "favorite": 9495,
+          "view": 688203,
+          "like": 19562,
+          "reply": 3768,
+          "favorite": 9491,
           "coin": 6389,
-          "share": 2248
+          "share": 2249
         }
       },
       {
@@ -559,11 +559,11 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/9ef8e96d5b21af977df769fd7599add194fc6594.jpg",
         "pubdate": 1746026015,
         "stat": {
-          "view": 2137797,
-          "like": 14848,
-          "reply": 914,
-          "favorite": 8832,
-          "coin": 8517,
+          "view": 2138034,
+          "like": 14851,
+          "reply": 915,
+          "favorite": 8831,
+          "coin": 8519,
           "share": 1951
         }
       },
@@ -575,12 +575,12 @@
         "cover_image": "http://i2.hdslb.com/bfs/archive/ad0271e4412d4b26011baccf944d48f2bc5dfeb6.jpg",
         "pubdate": 1746889214,
         "stat": {
-          "view": 876658,
-          "like": 25872,
+          "view": 877005,
+          "like": 25875,
           "reply": 1607,
-          "favorite": 10930,
+          "favorite": 10928,
           "coin": 7236,
-          "share": 1564
+          "share": 1565
         }
       },
       {
@@ -591,12 +591,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/84bec966e2e3ab27ead11293a6c722bd1884a862.jpg",
         "pubdate": 1754742159,
         "stat": {
-          "view": 478665,
-          "like": 14402,
-          "reply": 1876,
-          "favorite": 6944,
-          "coin": 5941,
-          "share": 1344
+          "view": 479241,
+          "like": 14412,
+          "reply": 1878,
+          "favorite": 6951,
+          "coin": 5948,
+          "share": 1345
         }
       }
     ],
