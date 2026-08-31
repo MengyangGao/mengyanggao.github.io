@@ -1,7 +1,63 @@
 {
-  "generated_at": "2026-08-24T02:21:00.601Z",
+  "generated_at": "2026-08-31T06:38:56.556Z",
   "github": {
     "repos": {
+      "MengyangGao/hand_exoskeleton": {
+        "url": "https://github.com/MengyangGao/hand_exoskeleton",
+        "full_name": "MengyangGao/hand_exoskeleton",
+        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+        "stars": 104,
+        "forks": 11,
+        "created_at": "2024-05-26T09:19:11Z",
+        "updated_at": "2026-08-29T03:14:23Z",
+        "pushed_at": "2026-06-03T15:53:12Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "C",
+          "C++"
+        ],
+        "language_stats": [
+          {
+            "name": "C",
+            "bytes": 38319,
+            "ratio": 81.8
+          },
+          {
+            "name": "C++",
+            "bytes": 8533,
+            "ratio": 18.2
+          }
+        ]
+      },
+      "MengyangGao/visual_servo_tracking": {
+        "url": "https://github.com/MengyangGao/visual_servo_tracking",
+        "full_name": "MengyangGao/visual_servo_tracking",
+        "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
+        "stars": 4,
+        "forks": 0,
+        "created_at": "2026-04-07T09:58:58Z",
+        "updated_at": "2026-08-29T09:24:10Z",
+        "pushed_at": "2026-07-31T16:31:04Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [
+          "Python",
+          "MATLAB"
+        ],
+        "language_stats": [
+          {
+            "name": "Python",
+            "bytes": 594592,
+            "ratio": 80.4
+          },
+          {
+            "name": "MATLAB",
+            "bytes": 145364,
+            "ratio": 19.6
+          }
+        ]
+      },
       "MengyangGao/LLM-Robot": {
         "url": "https://github.com/MengyangGao/LLM-Robot",
         "full_name": "MengyangGao/LLM-Robot",
@@ -24,34 +80,6 @@
           }
         ]
       },
-      "MengyangGao/visual_servo_tracking": {
-        "url": "https://github.com/MengyangGao/visual_servo_tracking",
-        "full_name": "MengyangGao/visual_servo_tracking",
-        "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
-        "stars": 3,
-        "forks": 0,
-        "created_at": "2026-04-07T09:58:58Z",
-        "updated_at": "2026-07-31T17:03:33Z",
-        "pushed_at": "2026-07-31T16:31:04Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [
-          "Python",
-          "MATLAB"
-        ],
-        "language_stats": [
-          {
-            "name": "Python",
-            "bytes": 594592,
-            "ratio": 80.4
-          },
-          {
-            "name": "MATLAB",
-            "bytes": 145364,
-            "ratio": 19.6
-          }
-        ]
-      },
       "MengyangGao/Awesome-Robotics-Embodied-AI": {
         "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
         "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
@@ -66,33 +94,55 @@
         "top_languages": [],
         "language_stats": []
       },
-      "MengyangGao/hand_exoskeleton": {
-        "url": "https://github.com/MengyangGao/hand_exoskeleton",
-        "full_name": "MengyangGao/hand_exoskeleton",
-        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 102,
-        "forks": 11,
-        "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-08-21T05:41:17Z",
-        "pushed_at": "2026-06-03T15:53:12Z",
-        "homepage": "",
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 34,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-06-03T20:03:53Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/RAG-system": {
+        "url": "https://github.com/MengyangGao/RAG-system",
+        "full_name": "MengyangGao/RAG-system",
+        "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+        "stars": 2,
+        "forks": 1,
+        "created_at": "2024-06-26T16:12:54Z",
+        "updated_at": "2024-07-08T09:02:09Z",
+        "pushed_at": "2024-07-07T15:52:04Z",
+        "homepage": null,
         "topics": [],
         "top_languages": [
-          "C",
-          "C++"
+          "Python"
         ],
         "language_stats": [
           {
-            "name": "C",
-            "bytes": 38319,
-            "ratio": 81.8
-          },
-          {
-            "name": "C++",
-            "bytes": 8533,
-            "ratio": 18.2
+            "name": "Python",
+            "bytes": 11932,
+            "ratio": 100
           }
         ]
+      },
+      "MengyangGao/gzic.online": {
+        "url": "https://github.com/MengyangGao/gzic.online",
+        "full_name": "MengyangGao/gzic.online",
+        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+        "stars": 62,
+        "forks": 10,
+        "created_at": "2023-03-31T12:45:11Z",
+        "updated_at": "2026-07-16T13:55:01Z",
+        "pushed_at": "2024-09-08T09:21:37Z",
+        "homepage": "https://scut.wiki",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
       },
       "MengyangGao/infoMatrix": {
         "url": "https://github.com/MengyangGao/infoMatrix",
@@ -134,56 +184,6 @@
           }
         ]
       },
-      "MengyangGao/gzic.online": {
-        "url": "https://github.com/MengyangGao/gzic.online",
-        "full_name": "MengyangGao/gzic.online",
-        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
-        "stars": 62,
-        "forks": 10,
-        "created_at": "2023-03-31T12:45:11Z",
-        "updated_at": "2026-07-16T13:55:01Z",
-        "pushed_at": "2024-09-08T09:21:37Z",
-        "homepage": "https://scut.wiki",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
-      "MengyangGao/flying.gzic.online": {
-        "url": "https://github.com/MengyangGao/flying.gzic.online",
-        "full_name": "MengyangGao/flying.gzic.online",
-        "description": "华南理工大学飞跃手册",
-        "stars": 34,
-        "forks": 3,
-        "created_at": "2023-08-09T04:15:02Z",
-        "updated_at": "2026-06-03T20:03:53Z",
-        "pushed_at": "2024-04-21T16:21:55Z",
-        "homepage": "https://flying.gzic.online",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
-      "MengyangGao/RAG-system": {
-        "url": "https://github.com/MengyangGao/RAG-system",
-        "full_name": "MengyangGao/RAG-system",
-        "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
-        "stars": 2,
-        "forks": 1,
-        "created_at": "2024-06-26T16:12:54Z",
-        "updated_at": "2024-07-08T09:02:09Z",
-        "pushed_at": "2024-07-07T15:52:04Z",
-        "homepage": null,
-        "topics": [],
-        "top_languages": [
-          "Python"
-        ],
-        "language_stats": [
-          {
-            "name": "Python",
-            "bytes": 11932,
-            "ratio": 100
-          }
-        ]
-      },
       "MengyangGao/mengyanggao.github.io": {
         "url": "https://github.com/MengyangGao/mengyanggao.github.io",
         "full_name": "MengyangGao/mengyanggao.github.io",
@@ -191,8 +191,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-08-17T02:18:33Z",
-        "pushed_at": "2026-08-17T02:18:15Z",
+        "updated_at": "2026-08-24T02:22:09Z",
+        "pushed_at": "2026-08-24T02:21:10Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -228,19 +228,19 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 170,
+        "total_stars": 173,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
             "full_name": "MengyangGao/visual_servo_tracking",
             "name": "visual_servo_tracking",
             "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
-            "stars": 3,
+            "stars": 4,
             "forks": 0,
             "language": "Python",
             "topics": [],
             "created_at": "2026-04-07T09:58:58Z",
-            "updated_at": "2026-07-31T17:03:33Z",
+            "updated_at": "2026-08-29T09:24:10Z",
             "pushed_at": "2026-07-31T16:31:04Z",
             "homepage": "",
             "top_languages": [
@@ -269,12 +269,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 102,
+            "stars": 104,
             "forks": 11,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-08-21T05:41:17Z",
+            "updated_at": "2026-08-29T03:14:23Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -362,8 +362,8 @@
             "language": "TypeScript",
             "topics": [],
             "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-08-17T02:18:33Z",
-            "pushed_at": "2026-08-17T02:18:15Z",
+            "updated_at": "2026-08-24T02:22:09Z",
+            "pushed_at": "2026-08-24T02:21:10Z",
             "homepage": "https://gaomengyang.com/",
             "top_languages": [
               "TypeScript",
@@ -543,12 +543,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/dc9a60b9a46c40614fe6aa759ec72d3c28671352.jpg",
         "pubdate": 1744467501,
         "stat": {
-          "view": 688203,
-          "like": 19562,
-          "reply": 3768,
-          "favorite": 9491,
+          "view": 688630,
+          "like": 19567,
+          "reply": 3770,
+          "favorite": 9492,
           "coin": 6389,
-          "share": 2249
+          "share": 2251
         }
       },
       {
@@ -559,12 +559,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/9ef8e96d5b21af977df769fd7599add194fc6594.jpg",
         "pubdate": 1746026015,
         "stat": {
-          "view": 2138034,
-          "like": 14851,
+          "view": 2138271,
+          "like": 14852,
           "reply": 915,
-          "favorite": 8831,
-          "coin": 8519,
-          "share": 1951
+          "favorite": 8835,
+          "coin": 8521,
+          "share": 1953
         }
       },
       {
@@ -575,12 +575,12 @@
         "cover_image": "http://i2.hdslb.com/bfs/archive/ad0271e4412d4b26011baccf944d48f2bc5dfeb6.jpg",
         "pubdate": 1746889214,
         "stat": {
-          "view": 877005,
-          "like": 25875,
-          "reply": 1607,
-          "favorite": 10928,
+          "view": 877417,
+          "like": 25881,
+          "reply": 1605,
+          "favorite": 10932,
           "coin": 7236,
-          "share": 1565
+          "share": 1566
         }
       },
       {
@@ -591,12 +591,12 @@
         "cover_image": "http://i1.hdslb.com/bfs/archive/84bec966e2e3ab27ead11293a6c722bd1884a862.jpg",
         "pubdate": 1754742159,
         "stat": {
-          "view": 479241,
-          "like": 14412,
-          "reply": 1878,
-          "favorite": 6951,
-          "coin": 5948,
-          "share": 1345
+          "view": 479897,
+          "like": 14425,
+          "reply": 1881,
+          "favorite": 6959,
+          "coin": 5950,
+          "share": 1348
         }
       }
     ],
