@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-14T05:46:29.449Z",
+  "generated_at": "2026-09-21T05:53:29.415Z",
   "github": {
     "repos": {
-      "MengyangGao/visual_servo_tracking": {
-        "url": "https://github.com/MengyangGao/visual_servo_tracking",
-        "full_name": "MengyangGao/visual_servo_tracking",
-        "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
-        "stars": 5,
-        "forks": 0,
-        "created_at": "2026-04-07T09:58:58Z",
-        "updated_at": "2026-09-09T12:19:34Z",
-        "pushed_at": "2026-07-31T16:31:04Z",
+      "MengyangGao/hand_exoskeleton": {
+        "url": "https://github.com/MengyangGao/hand_exoskeleton",
+        "full_name": "MengyangGao/hand_exoskeleton",
+        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+        "stars": 112,
+        "forks": 12,
+        "created_at": "2024-05-26T09:19:11Z",
+        "updated_at": "2026-09-19T09:56:25Z",
+        "pushed_at": "2026-06-03T15:53:12Z",
         "homepage": "",
         "topics": [],
         "top_languages": [
-          "Python",
-          "MATLAB"
+          "C",
+          "C++"
         ],
         "language_stats": [
           {
-            "name": "Python",
-            "bytes": 594592,
-            "ratio": 80.4
+            "name": "C",
+            "bytes": 38319,
+            "ratio": 81.8
           },
           {
-            "name": "MATLAB",
-            "bytes": 145364,
-            "ratio": 19.6
+            "name": "C++",
+            "bytes": 8533,
+            "ratio": 18.2
           }
         ]
       },
@@ -52,31 +52,31 @@
           }
         ]
       },
-      "MengyangGao/hand_exoskeleton": {
-        "url": "https://github.com/MengyangGao/hand_exoskeleton",
-        "full_name": "MengyangGao/hand_exoskeleton",
-        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 108,
-        "forks": 11,
-        "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-09-14T02:10:54Z",
-        "pushed_at": "2026-06-03T15:53:12Z",
+      "MengyangGao/visual_servo_tracking": {
+        "url": "https://github.com/MengyangGao/visual_servo_tracking",
+        "full_name": "MengyangGao/visual_servo_tracking",
+        "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
+        "stars": 5,
+        "forks": 1,
+        "created_at": "2026-04-07T09:58:58Z",
+        "updated_at": "2026-09-09T12:19:34Z",
+        "pushed_at": "2026-07-31T16:31:04Z",
         "homepage": "",
         "topics": [],
         "top_languages": [
-          "C",
-          "C++"
+          "Python",
+          "MATLAB"
         ],
         "language_stats": [
           {
-            "name": "C",
-            "bytes": 38319,
-            "ratio": 81.8
+            "name": "Python",
+            "bytes": 594592,
+            "ratio": 80.4
           },
           {
-            "name": "C++",
-            "bytes": 8533,
-            "ratio": 18.2
+            "name": "MATLAB",
+            "bytes": 145364,
+            "ratio": 19.6
           }
         ]
       },
@@ -98,12 +98,26 @@
         "url": "https://github.com/MengyangGao/gzic.online",
         "full_name": "MengyangGao/gzic.online",
         "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
-        "stars": 63,
+        "stars": 64,
         "forks": 10,
         "created_at": "2023-03-31T12:45:11Z",
-        "updated_at": "2026-09-04T14:34:45Z",
+        "updated_at": "2026-09-19T09:53:58Z",
         "pushed_at": "2024-09-08T09:21:37Z",
         "homepage": "https://scut.wiki",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 34,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-06-03T20:03:53Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
         "topics": [],
         "top_languages": [],
         "language_stats": []
@@ -141,20 +155,6 @@
             "ratio": 5.7
           }
         ]
-      },
-      "MengyangGao/flying.gzic.online": {
-        "url": "https://github.com/MengyangGao/flying.gzic.online",
-        "full_name": "MengyangGao/flying.gzic.online",
-        "description": "华南理工大学飞跃手册",
-        "stars": 34,
-        "forks": 3,
-        "created_at": "2023-08-09T04:15:02Z",
-        "updated_at": "2026-06-03T20:03:53Z",
-        "pushed_at": "2024-04-21T16:21:55Z",
-        "homepage": "https://flying.gzic.online",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
       },
       "MengyangGao/infoMatrix": {
         "url": "https://github.com/MengyangGao/infoMatrix",
@@ -203,8 +203,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-09-07T05:40:35Z",
-        "pushed_at": "2026-09-07T05:40:31Z",
+        "updated_at": "2026-09-14T05:46:47Z",
+        "pushed_at": "2026-09-14T05:46:44Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -240,7 +240,7 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 178,
+        "total_stars": 182,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -248,7 +248,7 @@
             "name": "visual_servo_tracking",
             "description": "Visual Servo Tracking, containing PBVS and IBVS, implemented with MATLAB and MuJoCo",
             "stars": 5,
-            "forks": 0,
+            "forks": 1,
             "language": "Python",
             "topics": [],
             "created_at": "2026-04-07T09:58:58Z",
@@ -281,12 +281,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 108,
-            "forks": 11,
+            "stars": 112,
+            "forks": 12,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-09-14T02:10:54Z",
+            "updated_at": "2026-09-19T09:56:25Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -362,8 +362,54 @@
       },
       "software": {
         "count": 5,
-        "total_stars": 102,
+        "total_stars": 103,
         "recent": [
+          {
+            "url": "https://github.com/MengyangGao/mengyanggao.github.io",
+            "full_name": "MengyangGao/mengyanggao.github.io",
+            "name": "mengyanggao.github.io",
+            "description": "Mengyang Gao's personal website, built with Astro + TypeScript.",
+            "stars": 3,
+            "forks": 0,
+            "language": "TypeScript",
+            "topics": [],
+            "created_at": "2026-01-03T09:56:03Z",
+            "updated_at": "2026-09-14T05:46:47Z",
+            "pushed_at": "2026-09-14T05:46:44Z",
+            "homepage": "https://gaomengyang.com/",
+            "top_languages": [
+              "TypeScript",
+              "JavaScript",
+              "Astro",
+              "CSS"
+            ],
+            "language_stats": [
+              {
+                "name": "TypeScript",
+                "bytes": 59505,
+                "ratio": 32
+              },
+              {
+                "name": "JavaScript",
+                "bytes": 56272,
+                "ratio": 30.3
+              },
+              {
+                "name": "Astro",
+                "bytes": 44629,
+                "ratio": 24
+              },
+              {
+                "name": "CSS",
+                "bytes": 25417,
+                "ratio": 13.7
+              }
+            ],
+            "bucket": "software",
+            "readme_excerpt": "Mengyang Gao's personal website, built with Astro + TypeScript.",
+            "readme_image": "https://opengraph.githubassets.com/1/MengyangGao/mengyanggao.github.io",
+            "readme_image_local": "/assets/images/repos/MengyangGao__mengyanggao.github.io.png"
+          },
           {
             "url": "https://github.com/MengyangGao/infoMatrix",
             "full_name": "MengyangGao/infoMatrix",
@@ -451,62 +497,16 @@
             "readme_image_local": null
           },
           {
-            "url": "https://github.com/MengyangGao/mengyanggao.github.io",
-            "full_name": "MengyangGao/mengyanggao.github.io",
-            "name": "mengyanggao.github.io",
-            "description": "Mengyang Gao's personal website, built with Astro + TypeScript.",
-            "stars": 3,
-            "forks": 0,
-            "language": "TypeScript",
-            "topics": [],
-            "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-09-07T05:40:35Z",
-            "pushed_at": "2026-09-07T05:40:31Z",
-            "homepage": "https://gaomengyang.com/",
-            "top_languages": [
-              "TypeScript",
-              "JavaScript",
-              "Astro",
-              "CSS"
-            ],
-            "language_stats": [
-              {
-                "name": "TypeScript",
-                "bytes": 59505,
-                "ratio": 32
-              },
-              {
-                "name": "JavaScript",
-                "bytes": 56272,
-                "ratio": 30.3
-              },
-              {
-                "name": "Astro",
-                "bytes": 44629,
-                "ratio": 24
-              },
-              {
-                "name": "CSS",
-                "bytes": 25417,
-                "ratio": 13.7
-              }
-            ],
-            "bucket": "software",
-            "readme_excerpt": "Mengyang Gao's personal website, built with Astro + TypeScript.",
-            "readme_image": "https://opengraph.githubassets.com/1/MengyangGao/mengyanggao.github.io",
-            "readme_image_local": "/assets/images/repos/MengyangGao__mengyanggao.github.io.png"
-          },
-          {
             "url": "https://github.com/MengyangGao/gzic.online",
             "full_name": "MengyangGao/gzic.online",
             "name": "gzic.online",
             "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
-            "stars": 63,
+            "stars": 64,
             "forks": 10,
             "language": null,
             "topics": [],
             "created_at": "2023-03-31T12:45:11Z",
-            "updated_at": "2026-09-04T14:34:45Z",
+            "updated_at": "2026-09-19T09:53:58Z",
             "pushed_at": "2024-09-08T09:21:37Z",
             "homepage": "https://scut.wiki",
             "top_languages": [],
