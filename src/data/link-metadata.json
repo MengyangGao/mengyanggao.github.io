@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-28T06:18:22.005Z",
+  "generated_at": "2026-10-05T06:32:15.179Z",
   "github": {
     "repos": {
       "MengyangGao/hand_exoskeleton": {
         "url": "https://github.com/MengyangGao/hand_exoskeleton",
         "full_name": "MengyangGao/hand_exoskeleton",
         "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 115,
+        "stars": 116,
         "forks": 13,
         "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-09-25T17:26:24Z",
+        "updated_at": "2026-10-02T12:32:34Z",
         "pushed_at": "2026-06-03T15:53:12Z",
         "homepage": "",
         "topics": [],
@@ -29,6 +29,20 @@
             "ratio": 18.2
           }
         ]
+      },
+      "MengyangGao/Awesome-Robotics-Embodied-AI": {
+        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
+        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
+        "description": "My notes on Robotics and Embodied AI.",
+        "stars": 17,
+        "forks": 1,
+        "created_at": "2024-11-18T15:54:46Z",
+        "updated_at": "2026-07-27T08:06:24Z",
+        "pushed_at": "2026-04-03T00:11:15Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
       },
       "MengyangGao/LLM-Robot": {
         "url": "https://github.com/MengyangGao/LLM-Robot",
@@ -80,30 +94,16 @@
           }
         ]
       },
-      "MengyangGao/Awesome-Robotics-Embodied-AI": {
-        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
-        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
-        "description": "My notes on Robotics and Embodied AI.",
-        "stars": 17,
-        "forks": 1,
-        "created_at": "2024-11-18T15:54:46Z",
-        "updated_at": "2026-07-27T08:06:24Z",
-        "pushed_at": "2026-04-03T00:11:15Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
-      "MengyangGao/flying.gzic.online": {
-        "url": "https://github.com/MengyangGao/flying.gzic.online",
-        "full_name": "MengyangGao/flying.gzic.online",
-        "description": "华南理工大学飞跃手册",
-        "stars": 34,
-        "forks": 3,
-        "created_at": "2023-08-09T04:15:02Z",
-        "updated_at": "2026-06-03T20:03:53Z",
-        "pushed_at": "2024-04-21T16:21:55Z",
-        "homepage": "https://flying.gzic.online",
+      "MengyangGao/gzic.online": {
+        "url": "https://github.com/MengyangGao/gzic.online",
+        "full_name": "MengyangGao/gzic.online",
+        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+        "stars": 65,
+        "forks": 10,
+        "created_at": "2023-03-31T12:45:11Z",
+        "updated_at": "2026-09-22T12:25:47Z",
+        "pushed_at": "2024-09-08T09:21:37Z",
+        "homepage": "https://scut.wiki",
         "topics": [],
         "top_languages": [],
         "language_stats": []
@@ -116,7 +116,7 @@
         "forks": 1,
         "created_at": "2024-06-26T16:12:54Z",
         "updated_at": "2026-09-12T15:22:50Z",
-        "pushed_at": "2026-09-12T15:25:43Z",
+        "pushed_at": "2026-10-01T23:50:12Z",
         "homepage": null,
         "topics": [],
         "top_languages": [
@@ -141,20 +141,6 @@
             "ratio": 5.7
           }
         ]
-      },
-      "MengyangGao/gzic.online": {
-        "url": "https://github.com/MengyangGao/gzic.online",
-        "full_name": "MengyangGao/gzic.online",
-        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
-        "stars": 65,
-        "forks": 10,
-        "created_at": "2023-03-31T12:45:11Z",
-        "updated_at": "2026-09-22T12:25:47Z",
-        "pushed_at": "2024-09-08T09:21:37Z",
-        "homepage": "https://scut.wiki",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
       },
       "MengyangGao/infoMatrix": {
         "url": "https://github.com/MengyangGao/infoMatrix",
@@ -196,6 +182,20 @@
           }
         ]
       },
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 35,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-10-04T19:28:21Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
       "MengyangGao/mengyanggao.github.io": {
         "url": "https://github.com/MengyangGao/mengyanggao.github.io",
         "full_name": "MengyangGao/mengyanggao.github.io",
@@ -203,8 +203,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-09-21T05:53:41Z",
-        "pushed_at": "2026-09-21T05:53:38Z",
+        "updated_at": "2026-09-28T06:18:33Z",
+        "pushed_at": "2026-09-28T06:18:29Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -240,7 +240,7 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 186,
+        "total_stars": 187,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -281,12 +281,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 115,
+            "stars": 116,
             "forks": 13,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-09-25T17:26:24Z",
+            "updated_at": "2026-10-02T12:32:34Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -362,8 +362,48 @@
       },
       "software": {
         "count": 5,
-        "total_stars": 104,
+        "total_stars": 105,
         "recent": [
+          {
+            "url": "https://github.com/MengyangGao/RAG-system",
+            "full_name": "MengyangGao/RAG-system",
+            "name": "RAG-system",
+            "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+            "stars": 2,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "created_at": "2024-06-26T16:12:54Z",
+            "updated_at": "2026-09-12T15:22:50Z",
+            "pushed_at": "2026-10-01T23:50:12Z",
+            "homepage": "",
+            "top_languages": [
+              "Python",
+              "JavaScript",
+              "HTML"
+            ],
+            "language_stats": [
+              {
+                "name": "Python",
+                "bytes": 73098,
+                "ratio": 82.9
+              },
+              {
+                "name": "JavaScript",
+                "bytes": 10007,
+                "ratio": 11.4
+              },
+              {
+                "name": "HTML",
+                "bytes": 5054,
+                "ratio": 5.7
+              }
+            ],
+            "bucket": "software",
+            "readme_excerpt": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
+            "readme_image": "https://github.com/MengyangGao/RAG-system/actions/workflows/ci.yml/badge.svg",
+            "readme_image_local": null
+          },
           {
             "url": "https://github.com/MengyangGao/mengyanggao.github.io",
             "full_name": "MengyangGao/mengyanggao.github.io",
@@ -374,8 +414,8 @@
             "language": "TypeScript",
             "topics": [],
             "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-09-21T05:53:41Z",
-            "pushed_at": "2026-09-21T05:53:38Z",
+            "updated_at": "2026-09-28T06:18:33Z",
+            "pushed_at": "2026-09-28T06:18:29Z",
             "homepage": "https://gaomengyang.com/",
             "top_languages": [
               "TypeScript",
@@ -457,46 +497,6 @@
             "readme_image_local": "/assets/images/repos/MengyangGao__infoMatrix.png"
           },
           {
-            "url": "https://github.com/MengyangGao/RAG-system",
-            "full_name": "MengyangGao/RAG-system",
-            "name": "RAG-system",
-            "description": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
-            "stars": 2,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "created_at": "2024-06-26T16:12:54Z",
-            "updated_at": "2026-09-12T15:22:50Z",
-            "pushed_at": "2026-09-12T15:25:43Z",
-            "homepage": "",
-            "top_languages": [
-              "Python",
-              "JavaScript",
-              "HTML"
-            ],
-            "language_stats": [
-              {
-                "name": "Python",
-                "bytes": 73098,
-                "ratio": 82.9
-              },
-              {
-                "name": "JavaScript",
-                "bytes": 10007,
-                "ratio": 11.4
-              },
-              {
-                "name": "HTML",
-                "bytes": 5054,
-                "ratio": 5.7
-              }
-            ],
-            "bucket": "software",
-            "readme_excerpt": "Using LLM and RAG to build a Q-A system based on specific knowledge. GUI is implemented by Streamlit.",
-            "readme_image": "https://github.com/MengyangGao/RAG-system/actions/workflows/ci.yml/badge.svg",
-            "readme_image_local": null
-          },
-          {
             "url": "https://github.com/MengyangGao/gzic.online",
             "full_name": "MengyangGao/gzic.online",
             "name": "gzic.online",
@@ -521,12 +521,12 @@
             "full_name": "MengyangGao/flying.gzic.online",
             "name": "flying.gzic.online",
             "description": "华南理工大学飞跃手册",
-            "stars": 34,
+            "stars": 35,
             "forks": 3,
             "language": null,
             "topics": [],
             "created_at": "2023-08-09T04:15:02Z",
-            "updated_at": "2026-06-03T20:03:53Z",
+            "updated_at": "2026-10-04T19:28:21Z",
             "pushed_at": "2024-04-21T16:21:55Z",
             "homepage": "https://flying.gzic.online",
             "top_languages": [],
