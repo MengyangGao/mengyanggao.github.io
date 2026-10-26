@@ -1,49 +1,7 @@
 {
-  "generated_at": "2026-10-19T05:42:23.608Z",
+  "generated_at": "2026-10-26T05:45:35.657Z",
   "github": {
     "repos": {
-      "MengyangGao/hand_exoskeleton": {
-        "url": "https://github.com/MengyangGao/hand_exoskeleton",
-        "full_name": "MengyangGao/hand_exoskeleton",
-        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-        "stars": 118,
-        "forks": 13,
-        "created_at": "2024-05-26T09:19:11Z",
-        "updated_at": "2026-10-13T01:37:44Z",
-        "pushed_at": "2026-06-03T15:53:12Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [
-          "C",
-          "C++"
-        ],
-        "language_stats": [
-          {
-            "name": "C",
-            "bytes": 38319,
-            "ratio": 81.8
-          },
-          {
-            "name": "C++",
-            "bytes": 8533,
-            "ratio": 18.2
-          }
-        ]
-      },
-      "MengyangGao/Awesome-Robotics-Embodied-AI": {
-        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
-        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
-        "description": "My notes on Robotics and Embodied AI.",
-        "stars": 17,
-        "forks": 2,
-        "created_at": "2024-11-18T15:54:46Z",
-        "updated_at": "2026-07-27T08:06:24Z",
-        "pushed_at": "2026-04-03T00:11:15Z",
-        "homepage": "",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
       "MengyangGao/LLM-Robot": {
         "url": "https://github.com/MengyangGao/LLM-Robot",
         "full_name": "MengyangGao/LLM-Robot",
@@ -65,6 +23,20 @@
             "ratio": 100
           }
         ]
+      },
+      "MengyangGao/Awesome-Robotics-Embodied-AI": {
+        "url": "https://github.com/MengyangGao/Awesome-Robotics-Embodied-AI",
+        "full_name": "MengyangGao/Awesome-Robotics-Embodied-AI",
+        "description": "My notes on Robotics and Embodied AI.",
+        "stars": 17,
+        "forks": 2,
+        "created_at": "2024-11-18T15:54:46Z",
+        "updated_at": "2026-07-27T08:06:24Z",
+        "pushed_at": "2026-04-03T00:11:15Z",
+        "homepage": "",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
       },
       "MengyangGao/visual_servo_tracking": {
         "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -94,19 +66,33 @@
           }
         ]
       },
-      "MengyangGao/gzic.online": {
-        "url": "https://github.com/MengyangGao/gzic.online",
-        "full_name": "MengyangGao/gzic.online",
-        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
-        "stars": 65,
-        "forks": 10,
-        "created_at": "2023-03-31T12:45:11Z",
-        "updated_at": "2026-09-22T12:25:47Z",
-        "pushed_at": "2024-09-08T09:21:37Z",
-        "homepage": "https://scut.wiki",
+      "MengyangGao/hand_exoskeleton": {
+        "url": "https://github.com/MengyangGao/hand_exoskeleton",
+        "full_name": "MengyangGao/hand_exoskeleton",
+        "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
+        "stars": 119,
+        "forks": 13,
+        "created_at": "2024-05-26T09:19:11Z",
+        "updated_at": "2026-10-21T04:41:33Z",
+        "pushed_at": "2026-06-03T15:53:12Z",
+        "homepage": "",
         "topics": [],
-        "top_languages": [],
-        "language_stats": []
+        "top_languages": [
+          "C",
+          "C++"
+        ],
+        "language_stats": [
+          {
+            "name": "C",
+            "bytes": 38319,
+            "ratio": 81.8
+          },
+          {
+            "name": "C++",
+            "bytes": 8533,
+            "ratio": 18.2
+          }
+        ]
       },
       "MengyangGao/RAG-system": {
         "url": "https://github.com/MengyangGao/RAG-system",
@@ -141,6 +127,34 @@
             "ratio": 5.7
           }
         ]
+      },
+      "MengyangGao/flying.gzic.online": {
+        "url": "https://github.com/MengyangGao/flying.gzic.online",
+        "full_name": "MengyangGao/flying.gzic.online",
+        "description": "华南理工大学飞跃手册",
+        "stars": 37,
+        "forks": 3,
+        "created_at": "2023-08-09T04:15:02Z",
+        "updated_at": "2026-10-18T13:54:33Z",
+        "pushed_at": "2024-04-21T16:21:55Z",
+        "homepage": "https://flying.gzic.online",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
+      },
+      "MengyangGao/gzic.online": {
+        "url": "https://github.com/MengyangGao/gzic.online",
+        "full_name": "MengyangGao/gzic.online",
+        "description": "scut.wiki (华工手册 in Chinese, previous name gzic.online) is a project that aggregates the information in South China University of Technology (SCUT), hoping to provide quick information query services for students, professor, staff, logistics, family members and other people in SCUT.",
+        "stars": 65,
+        "forks": 10,
+        "created_at": "2023-03-31T12:45:11Z",
+        "updated_at": "2026-09-22T12:25:47Z",
+        "pushed_at": "2024-09-08T09:21:37Z",
+        "homepage": "https://scut.wiki",
+        "topics": [],
+        "top_languages": [],
+        "language_stats": []
       },
       "MengyangGao/infoMatrix": {
         "url": "https://github.com/MengyangGao/infoMatrix",
@@ -182,20 +196,6 @@
           }
         ]
       },
-      "MengyangGao/flying.gzic.online": {
-        "url": "https://github.com/MengyangGao/flying.gzic.online",
-        "full_name": "MengyangGao/flying.gzic.online",
-        "description": "华南理工大学飞跃手册",
-        "stars": 37,
-        "forks": 3,
-        "created_at": "2023-08-09T04:15:02Z",
-        "updated_at": "2026-10-18T13:54:33Z",
-        "pushed_at": "2024-04-21T16:21:55Z",
-        "homepage": "https://flying.gzic.online",
-        "topics": [],
-        "top_languages": [],
-        "language_stats": []
-      },
       "MengyangGao/mengyanggao.github.io": {
         "url": "https://github.com/MengyangGao/mengyanggao.github.io",
         "full_name": "MengyangGao/mengyanggao.github.io",
@@ -203,8 +203,8 @@
         "stars": 3,
         "forks": 0,
         "created_at": "2026-01-03T09:56:03Z",
-        "updated_at": "2026-10-12T06:57:36Z",
-        "pushed_at": "2026-10-12T06:57:32Z",
+        "updated_at": "2026-10-19T05:42:35Z",
+        "pushed_at": "2026-10-19T05:42:32Z",
         "homepage": "https://gaomengyang.com/",
         "topics": [],
         "top_languages": [
@@ -240,7 +240,7 @@
     "buckets": {
       "robotics": {
         "count": 4,
-        "total_stars": 190,
+        "total_stars": 191,
         "recent": [
           {
             "url": "https://github.com/MengyangGao/visual_servo_tracking",
@@ -281,12 +281,12 @@
             "full_name": "MengyangGao/hand_exoskeleton",
             "name": "hand_exoskeleton",
             "description": "A low-cost 6DoF hand exoskeleton using linkage and tendon mechanism under ESP32.  一个低成本6自由度的手部外骨骼，用连杆驱动四指，用线驱模拟肌腱机制驱动大拇指，主控是ESP32，动力源是七个SC09总线舵机，可以承载大于20N的负载。",
-            "stars": 118,
+            "stars": 119,
             "forks": 13,
             "language": "C",
             "topics": [],
             "created_at": "2024-05-26T09:19:11Z",
-            "updated_at": "2026-10-13T01:37:44Z",
+            "updated_at": "2026-10-21T04:41:33Z",
             "pushed_at": "2026-06-03T15:53:12Z",
             "homepage": "",
             "top_languages": [
@@ -374,8 +374,8 @@
             "language": "TypeScript",
             "topics": [],
             "created_at": "2026-01-03T09:56:03Z",
-            "updated_at": "2026-10-12T06:57:36Z",
-            "pushed_at": "2026-10-12T06:57:32Z",
+            "updated_at": "2026-10-19T05:42:35Z",
+            "pushed_at": "2026-10-19T05:42:32Z",
             "homepage": "https://gaomengyang.com/",
             "top_languages": [
               "TypeScript",
